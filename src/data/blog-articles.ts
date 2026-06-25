@@ -1,3 +1,8 @@
+export interface ServiceLink {
+  href: string;
+  label: string;
+}
+
 export interface BlogArticle {
   slug: string;
   title: string;
@@ -9,6 +14,7 @@ export interface BlogArticle {
   imageAlt: string;
   serviceLink: string;
   serviceLinkLabel: string;
+  serviceLinks?: ServiceLink[];
   sections: Section[];
 }
 
@@ -16,9 +22,68 @@ export type Section =
   | { type: 'h2'; content: string }
   | { type: 'h3'; content: string }
   | { type: 'p'; content: string }
-  | { type: 'list'; items: string[] };
+  | { type: 'list'; items: string[] }
+  | { type: 'note'; content: string; source?: { label: string; url: string } };
 
 export const blogArticles: BlogArticle[] = [
+  {
+    slug: "aide-creation-numerique-acn-polynesie",
+    title: "Aide à la Création Numérique (ACN) : faites financer jusqu'à 50 % de votre site ou application en Polynésie",
+    metaTitle: "Aide à la Création Numérique (ACN) en Polynésie : 50 % financés | CréaVibes",
+    metaDescription: "L'ACN finance jusqu'à 50 % (plafond 350 000 F) la création de votre site internet ou application mobile en Polynésie française. Conditions, montants et démarches expliqués.",
+    excerpt: "Le Pays peut financer jusqu'à 50 % de votre site ou application grâce à l'ACN (plafond 350 000 F). Conditions, montants et démarches expliqués.",
+    date: "2026-06-23",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Document financier avec calculatrice et stylo symbolisant le financement et les aides aux entreprises",
+    serviceLink: "/creation-site-internet-tahiti",
+    serviceLinkLabel: "Découvrir notre service création de site internet",
+    serviceLinks: [
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+      { href: "/creation-application-polynesie", label: "Création d'application mobile & web" },
+    ],
+    sections: [
+      { type: 'p', content: "Beaucoup de patentés et petites entreprises de Tahiti hésitent à investir dans un site internet ou une application à cause du budget. Bonne nouvelle : le Pays peut financer une partie de votre projet grâce à l'Aide à la Création Numérique (ACN), pilotée par la DGEN (Direction Générale de l'Économie Numérique)." },
+      { type: 'h2', content: "Qu'est-ce que l'ACN ?" },
+      { type: 'p', content: "L'Aide à la Création Numérique accompagne les petites entreprises polynésiennes dans la conception de sites internet et d'applications mobiles, pour développer leur visibilité, présenter leurs produits et services ou vendre en ligne." },
+      { type: 'h2', content: "Qui peut en bénéficier ?" },
+      { type: 'p', content: "Sont éligibles les personnes physiques et les personnes morales (entreprises, associations) établies en Polynésie française, à condition de remplir les critères suivants :" },
+      { type: 'list', items: [
+        "Avoir un chiffre d'affaires annuel inférieur ou égal à 25 millions F CFP",
+        "Être immatriculé au RTE (et au RCS si applicable)",
+        "Être à jour de ses obligations sociales et fiscales",
+        "Ne pas être en cessation de paiement, redressement ou liquidation"
+      ]},
+      { type: 'p', content: "Sont exclues les personnes morales de droit public et les sociétés d'économie mixte." },
+      { type: 'h2', content: "Combien l'aide couvre-t-elle ?" },
+      { type: 'p', content: "L'ACN prend en charge jusqu'à 50 % du montant des dépenses éligibles, avec un plafond de 350 000 F CFP TTC. L'aide n'est attribuée qu'une fois tous les 3 ans par bénéficiaire." },
+      { type: 'h2', content: "Quelles dépenses sont éligibles ?" },
+      { type: 'p', content: "Les dépenses doivent être réalisées en Polynésie française. Sont concernées :" },
+      { type: 'list', items: [
+        "Les prestations de conception du site web ou de l'application (par exemple la prestation d'un studio comme CréaVibes)",
+        "Les frais de personnel liés au projet"
+      ]},
+      { type: 'p', content: "Point crucial : les dépenses engagées AVANT le dépôt de la demande ne sont pas éligibles. Il faut donc déposer la demande AVANT de lancer le projet. Concrètement, contactez-nous pour établir un devis, déposez votre demande ACN, puis on démarre les travaux une fois la demande enregistrée." },
+      { type: 'h2', content: "Comment déposer une demande ?" },
+      { type: 'p', content: "La demande se fait en ligne sur mes-demarches.gov.pf (rubrique DGEN — ACN). L'aide est versée en deux fois :" },
+      { type: 'list', items: [
+        "50 % après publication de l'arrêté d'attribution au Journal officiel de la Polynésie française",
+        "Le solde de 50 % après remise des justificatifs : état récapitulatif des dépenses, justificatifs comptables, preuve technique de l'existence du site ou de l'application"
+      ]},
+      { type: 'p', content: "Vous avez 12 mois après l'arrêté pour transmettre les justificatifs de réalisation." },
+      { type: 'h2', content: "Comment CréaVibes vous accompagne" },
+      { type: 'p', content: "Chez CréaVibes, nous concevons votre site internet ou votre application — une prestation qui entre directement dans les dépenses éligibles à l'ACN. Nous vous fournissons également la preuve technique de l'existence du site ou de l'application, le document indispensable pour débloquer le solde de l'aide." },
+      { type: 'p', content: "Concrètement, voici comment on procède ensemble :" },
+      { type: 'list', items: [
+        "On fait un appel découverte gratuit pour définir votre projet et estimer le budget",
+        "On vous fournit un devis détaillé que vous joindrez à votre demande ACN",
+        "Vous déposez votre demande sur mes-demarches.gov.pf",
+        "Une fois la demande validée, on lance la conception de votre site ou application",
+        "À la livraison, on vous remet tous les justificatifs nécessaires pour le versement du solde"
+      ]},
+      { type: 'p', content: "Réservez un appel découverte visio gratuit pour faire le point sur votre projet et la marche à suivre. On vous explique tout, sans engagement." },
+      { type: 'note', content: "Article informatif. Les conditions exactes et à jour figurent sur le site officiel de la DGEN. CréaVibes n'est pas l'administration et ne garantit pas l'attribution de l'aide, qui relève de la DGEN.", source: { label: "Source officielle : DGEN — Aide à la Création Numérique", url: "https://www.service-public.pf/dgen/aide-a-la-creation-numerique-acn/" } },
+    ]
+  },
   {
     slug: "community-management-tahiti-pourquoi-confier-page-facebook",
     title: "Community management à Tahiti : pourquoi confier sa page Facebook à un pro ?",

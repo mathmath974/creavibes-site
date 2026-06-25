@@ -15,6 +15,7 @@ const routes = [
   '/creation-application-polynesie',
   '/automatisation-ia-tahiti',
   '/blog',
+  '/blog/aide-creation-numerique-acn-polynesie',
   '/blog/community-management-tahiti-pourquoi-confier-page-facebook',
   '/blog/creation-site-internet-tahiti-prix-conseils',
   '/blog/automatisation-ia-pme-polynesie',

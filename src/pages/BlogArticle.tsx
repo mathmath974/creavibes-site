@@ -111,6 +111,22 @@ export default function BlogArticle() {
                         ))}
                       </ul>
                     );
+                  case 'note':
+                    return (
+                      <div key={i} className="mt-8 p-5 bg-gray-50 border border-gray-200 rounded-xl">
+                        <p className="text-gray-600 text-sm italic leading-relaxed">{section.content}</p>
+                        {section.source && (
+                          <a
+                            href={section.source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-3 text-sm text-[#0ea5e9] hover:underline"
+                          >
+                            {section.source.label}
+                          </a>
+                        )}
+                      </div>
+                    );
                   default:
                     return null;
                 }
@@ -120,14 +136,28 @@ export default function BlogArticle() {
             {/* Internal link to service */}
             <div className="mt-10 p-5 bg-sky-50 rounded-xl border border-sky-100">
               <p className="text-gray-700 mb-3">
-                Cet article vous a intéressé ? Découvrez notre service associé :
+                {article.serviceLinks ? 'Cet article vous a intéressé ? Découvrez nos services associés :' : 'Cet article vous a intéressé ? Découvrez notre service associé :'}
               </p>
-              <Link
-                to={article.serviceLink}
-                className="inline-flex items-center gap-1.5 text-[#0ea5e9] font-medium hover:gap-2.5 transition-all"
-              >
-                {article.serviceLinkLabel} <ArrowRight className="w-4 h-4" />
-              </Link>
+              {article.serviceLinks ? (
+                <div className="flex flex-col sm:flex-row gap-3">
+                  {article.serviceLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      to={link.href}
+                      className="inline-flex items-center gap-1.5 text-[#0ea5e9] font-medium hover:gap-2.5 transition-all"
+                    >
+                      {link.label} <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <Link
+                  to={article.serviceLink}
+                  className="inline-flex items-center gap-1.5 text-[#0ea5e9] font-medium hover:gap-2.5 transition-all"
+                >
+                  {article.serviceLinkLabel} <ArrowRight className="w-4 h-4" />
+                </Link>
+              )}
             </div>
 
             {/* CTA */}
