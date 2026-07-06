@@ -27,6 +27,41 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "creation-boutique-en-ligne-tahiti-e-commerce",
+    title: "Boutique en ligne à Tahiti : par où commencer son e-commerce ?",
+    metaTitle: "Boutique en ligne à Tahiti : bien démarrer | CréaVibes",
+    metaDescription: "Vendre en ligne à Tahiti, c'est possible même en étant patenté. Paiement local, livraison inter-îles, budget : le guide concret pour se lancer.",
+    excerpt: "Vendre en ligne à Tahiti, c'est possible même en étant patenté. Paiement local, livraison inter-îles, budget : le guide concret pour se lancer sereinement.",
+    date: "2026-07-06",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Commerçant préparant un colis à côté d'un ordinateur portable ouvert sur une boutique en ligne",
+    serviceLink: "/creation-site-internet-tahiti",
+    serviceLinkLabel: "Découvrir notre service création de site internet",
+    serviceLinks: [
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+      { href: "/blog/aide-creation-numerique-acn-polynesie", label: "Aide à la Création Numérique (ACN)" },
+    ],
+    sections: [
+      { type: 'p', content: "À Tahiti, on a longtemps cru que la vente en ligne était réservée aux grandes enseignes ou aux sites de métropole. Pourtant, de plus en plus de patentés et de petites entreprises polynésiennes ouvrent leur boutique en ligne : créateurs de monoï, artisans, pépinières, prêt-à-porter, produits du fenua. Le web permet de vendre 24h/24, aux clients des îles comme à la diaspora installée en métropole. La bonne nouvelle : se lancer coûte aujourd'hui bien moins cher qu'avant. Encore faut-il partir sur de bonnes bases." },
+      { type: 'h2', content: "Une boutique en ligne, pour quel type d'activité ?" },
+      { type: 'p', content: "L'e-commerce ne convient pas à tout le monde de la même façon. Si vous vendez des produits physiques (cosmétiques, artisanat, vêtements, alimentation non périssable), une boutique en ligne est un vrai canal de vente complémentaire à votre stand ou à votre page Facebook. Si vous proposez des services, un site vitrine avec prise de rendez-vous sera souvent plus adapté qu'un panier d'achat." },
+      { type: 'p', content: "Le premier réflexe n'est donc pas technique, mais commercial : qu'est-ce que je vends, à qui, et comment le client reçoit-il son produit ? Répondre à ces trois questions évite de payer pour des fonctionnalités inutiles." },
+      { type: 'h2', content: "Le paiement en ligne en Polynésie : c'est réglé" },
+      { type: 'p', content: "C'est la question qu'on nous pose le plus : comment je me fais payer ? En Polynésie, deux solutions locales existent et sont parfaitement rodées. PayZen (édité par Lyra, opéré par OSB) est proposé par la Banque SOCREDO et la Banque de Polynésie ; PayBox (Verifone) est proposé par la Banque de Tahiti. Ces plateformes acceptent les cartes VISA, Mastercard, AMEX et sécurisent chaque transaction avec le 3D Secure (code reçu par SMS)." },
+      { type: 'p', content: "Côté budget, comptez chez SOCREDO des frais de mise en service autour de 49 900 F CFP HT et un abonnement mensuel à partir de 2 000 F CFP, en plus d'une commission par transaction. Ces montants évoluent : le mieux est de demander un devis à jour à votre banque avant de vous lancer. L'essentiel à retenir : encaisser une carte bancaire depuis un client à Moorea, aux Marquises ou à Paris est aujourd'hui un problème résolu." },
+      { type: 'h2', content: "La livraison : le vrai défi polynésien" },
+      { type: 'p', content: "Ici, la logistique compte plus que la technique. Pensez en amont à vos zones de livraison : Tahiti, Presqu'île, îles Sous-le-Vent, Australes. Beaucoup de commerçants proposent le retrait sur place ou en point relais pour Tahiti, et l'envoi postal (OPT) pour les îles et la métropole. Affichez clairement vos délais et vos frais de port par zone : un client rassuré sur la livraison est un client qui valide son panier. Un simple tableau des tarifs par archipel évite déjà la moitié des questions en message privé." },
+      { type: 'h2', content: "Combien ça coûte et combien de temps ?" },
+      { type: 'p', content: "Une boutique en ligne bien construite repose sur des outils éprouvés (comme WooCommerce ou Shopify) : pas besoin de tout développer de zéro. Selon le nombre de produits, le niveau de personnalisation et les modes de livraison, une boutique se met en place en quelques semaines. Le budget dépend surtout de votre catalogue et de vos besoins ; nous en parlons toujours à partir de votre projet réel, pas d'un tarif sorti d'un chapeau. Si votre projet numérique est éligible, il peut par ailleurs entrer dans le cadre de l'Aide à la Création Numérique (ACN), qui peut financer une partie de votre site." },
+      { type: 'h2', content: "Avant de vous lancer : la check-list" },
+      { type: 'p', content: "Pour ne rien oublier : des photos produits nettes (le visuel fait vendre), des fiches produits honnêtes avec le prix en F CFP, des conditions de vente et de livraison claires, une page de contact, et un moyen de rassurer (avis clients, mentions légales). Une boutique en ligne, ce n'est pas qu'un panier : c'est la confiance que vous inspirez au premier coup d'œil." },
+      { type: 'p', content: "Se lancer dans l'e-commerce à Tahiti n'a jamais été aussi accessible. Le plus dur n'est pas la technologie, c'est de bien penser son offre, sa livraison et son expérience client. C'est exactement là qu'un accompagnement local fait gagner du temps et évite les erreurs coûteuses." },
+      { type: 'p', content: "Envie d'ouvrir votre boutique en ligne ? Discutons de votre projet lors d'un rendez-vous découverte en visio, gratuit et sans engagement. On regarde ensemble ce qui est réaliste pour votre activité." },
+      { type: 'note', content: "Article informatif. Les solutions et tarifs de paiement en ligne évoluent : vérifiez les conditions à jour auprès de votre banque. CréaVibes ne garantit aucun résultat commercial ou de référencement chiffré.", source: { label: "Source : Banque SOCREDO — PayZen & Easy Pay", url: "https://www.socredo.pf/entreprises/produit/payzen-et-easy-pay" } },
+    ]
+  },
+
+  {
     slug: "aide-creation-numerique-acn-polynesie",
     title: "Aide à la Création Numérique (ACN) : faites financer jusqu'à 50 % de votre site ou application en Polynésie",
     metaTitle: "Aide à la Création Numérique (ACN) en Polynésie : 50 % financés | CréaVibes",
