@@ -4,7 +4,7 @@ interface SEOHeadProps {
   title: string;
   description: string;
   path: string;
-  jsonLd?: object;
+  jsonLd?: object | object[];
 }
 
 const BASE_URL = "https://creavibespro.com";
@@ -42,8 +42,14 @@ const localBusinessSchema = {
 
 export default function SEOHead({ title, description, path, jsonLd }: SEOHeadProps) {
   const canonical = `${BASE_URL}${path}`;
-  const schemas = [organizationSchema, localBusinessSchema];
-  if (jsonLd) schemas.push(jsonLd as any);
+  const schemas: object[] = [organizationSchema, localBusinessSchema];
+  if (jsonLd) {
+    if (Array.isArray(jsonLd)) {
+      schemas.push(...jsonLd);
+    } else {
+      schemas.push(jsonLd);
+    }
+  }
 
   return (
     <Helmet>
