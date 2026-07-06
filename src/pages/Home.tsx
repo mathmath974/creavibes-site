@@ -8,16 +8,16 @@ import FadeIn from '../components/FadeIn';
 const services = [
   {
     icon: Monitor,
-    title: "Création de sites web",
-    description: "Sites vitrines, e-commerce et plateformes de réservation rapides et optimisés pour vos clients.",
+    title: "Création de sites internet",
+    description: "Sites vitrines, e-commerce et boutiques en ligne à Tahiti. Rapides, optimisés et conçus pour convertir vos visiteurs en clients.",
     href: "/creation-site-internet-tahiti",
     color: "bg-emerald-500",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Share2,
-    title: "Réseaux sociaux",
-    description: "Gestion complète de votre page Facebook & Instagram : visuels, publications et stratégie.",
+    title: "Community management",
+    description: "Gestion de votre page Facebook et Instagram à Tahiti : visuels pros, publications régulières et stratégie locale.",
     href: "/community-management-tahiti",
     color: "bg-[#0ea5e9]",
     image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -25,15 +25,15 @@ const services = [
   {
     icon: Smartphone,
     title: "Applications mobiles & web",
-    description: "Applications sur-mesure pour digitaliser votre activité et mieux servir vos clients.",
+    description: "Création d'applications sur-mesure et logiciels personnalisés pour digitaliser votre activité en Polynésie.",
     href: "/creation-application-polynesie",
     color: "bg-amber-500",
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Cpu,
-    title: "Automatisation IA",
-    description: "Gagnez du temps chaque semaine en automatisant vos tâches répétitives avec l'IA.",
+    title: "Automatisation & IA",
+    description: "Agents IA, chatbots et automatisation des tâches répétitives pour gagner des heures chaque semaine.",
     href: "/automatisation-ia-tahiti",
     color: "bg-violet-500",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -77,8 +77,8 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="CréaVibes — Création de sites web, réseaux sociaux & IA à Tahiti"
-        description="Agence digitale à Tahiti : création de sites internet, community management, applications et automatisation IA. Réservez un appel découverte visio gratuit."
+        title="Agence web et digitale à Tahiti | Sites, apps, réseaux sociaux et IA — CréaVibes"
+        description="Agence web à Tahiti : création de sites internet, applications mobiles, community management et automatisation IA en Polynésie française. Devis gratuit."
         path="/"
       />
 
@@ -92,11 +92,11 @@ export default function Home() {
                 Agence digitale basée à Tahiti
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Le partenaire digital des{' '}
-                <span className="text-[#0ea5e9]">pros de Tahiti</span>
+                Votre agence digitale en{' '}
+                <span className="text-[#0ea5e9]">Polynésie française</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10 max-w-2xl mx-auto">
-                Sites web, réseaux sociaux, applications et IA : chez CréaVibes, on construit votre présence en ligne pour que vous puissiez vous concentrer sur votre activité.
+                CréaVibes accompagne les entreprises de Tahiti dans leur développement en ligne : création de sites internet, gestion des réseaux sociaux, développement d'applications et automatisation par intelligence artificielle. Une seule agence web, tous vos besoins digitaux couverts.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <CTAButton size="lg" />
@@ -111,9 +111,9 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <FadeIn className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos expertises</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos services digitaux à Tahiti</h2>
             <p className="text-lg text-gray-600 max-w-xl mx-auto">
-              Des solutions digitales complètes pour développer votre activité en Polynésie
+              Création de sites, community management, applications et IA — des solutions complètes pour développer votre activité en Polynésie
             </p>
           </FadeIn>
 

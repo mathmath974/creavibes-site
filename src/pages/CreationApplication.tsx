@@ -8,10 +8,10 @@ import FadeIn from '../components/FadeIn';
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Création d'application mobile & web en Polynésie",
+  "name": "Développement d'application mobile à Tahiti",
   "provider": { "@type": "Organization", "name": "CréaVibes" },
   "areaServed": { "@type": "Place", "name": "Polynésie française" },
-  "description": "Développement d'applications web et mobiles sur mesure et logiciels personnalisés en Polynésie. Digitalisez votre activité.",
+  "description": "Créer une application mobile à Tahiti : développement iOS/Android, application web sur mesure, PWA et logiciel personnalisé en Polynésie.",
 };
 
 const faqData = [
@@ -77,8 +77,8 @@ export default function CreationApplication() {
   return (
     <>
       <SEOHead
-        title="Création d'application mobile & web en Polynésie | CréaVibes"
-        description="Développement d'applications web et mobiles sur mesure et logiciels personnalisés en Polynésie. Devis gratuit. Digitalisez votre activité. RDV visio gratuit."
+        title="Création d'application mobile en Polynésie | Devis — CréaVibes"
+        description="Créer une application mobile à Tahiti : développement d'appli iOS/Android, application web sur mesure, PWA et logiciel personnalisé en Polynésie. Devis gratuit."
         path="/creation-application-polynesie"
         jsonLd={[serviceSchema, faqPageSchema]}
       />
@@ -89,10 +89,10 @@ export default function CreationApplication() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <FadeIn>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                Applications web et mobiles en Polynésie
+                Créer une application mobile à Tahiti
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Digitalisez votre activité avec une application sur-mesure. Réservation, gestion de commandes, espace client — on développe la solution qui vous simplifie la vie et qui plaît à vos clients. Logiciels personnalisés en Polynésie pour toutes les tailles d'entreprise.
+                Développement d'application mobile en Polynésie : applications iOS et Android, application web sur mesure, PWA et logiciels personnalisés. Que vous souhaitiez digitaliser votre activité ou lancer un nouveau service, on développe la solution adaptée à votre budget et à vos clients.
               </p>
               <CTAButton size="lg" />
               <p className="mt-3 text-sm text-gray-500">Devis gratuit — appel découverte de 30 min</p>

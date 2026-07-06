@@ -8,10 +8,10 @@ import FadeIn from '../components/FadeIn';
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Automatisation IA pour entreprises à Tahiti",
+  "name": "Automatisation et IA pour entreprises à Tahiti",
   "provider": { "@type": "Organization", "name": "CréaVibes" },
   "areaServed": { "@type": "Place", "name": "Tahiti, Polynésie française" },
-  "description": "Automatisation des tâches pour les entreprises à Tahiti. IA et exploitation des données pour gagner des heures chaque semaine.",
+  "description": "Automatisation des tâches pour les entreprises à Tahiti : agents IA, chatbots, outils d'automatisation et intelligence artificielle pour PME en Polynésie.",
 };
 
 const faqData = [
@@ -86,8 +86,8 @@ export default function AutomatisationIA() {
   return (
     <>
       <SEOHead
-        title="Automatisation IA pour entreprises à Tahiti | CréaVibes"
-        description="Automatisation des tâches pour les entreprises à Tahiti grâce à l'IA. Devis gratuit. Gagnez des heures chaque semaine. RDV visio gratuit."
+        title="Automatisation et IA pour entreprises à Tahiti | CréaVibes"
+        description="Outils d'automatisation et intelligence artificielle pour PME à Tahiti : agents IA, chatbots, automatisation des tâches. Devis gratuit."
         path="/automatisation-ia-tahiti"
         jsonLd={[serviceSchema, faqPageSchema]}
       />
@@ -98,10 +98,10 @@ export default function AutomatisationIA() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <FadeIn>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                Automatisation des tâches pour les entreprises à Tahiti
+                Automatisation et IA pour les entreprises de Polynésie
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Gagnez des heures chaque semaine : on automatise vos process, votre support client, la création de contenu et votre CRM grâce à l'intelligence artificielle et l'exploitation de vos données. Plus besoin de faire le perroquet — laissez l'IA bosser pour vous.
+                Agents IA, chatbots et outils d'automatisation pour les entreprises à Tahiti : gagnez des heures chaque semaine en automatisant vos tâches répétitives. Intelligence artificielle pour PME, exploitation de vos données et CRM intelligent — on configure tout, vous profitez du temps gagné.
               </p>
               <CTAButton size="lg" />
               <p className="mt-3 text-sm text-gray-500">Devis gratuit — appel découverte de 30 min</p>
@@ -124,10 +124,10 @@ export default function AutomatisationIA() {
         <div className="container mx-auto px-4 md:px-6">
           <FadeIn className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              IA & data : qu'est-ce qu'on peut automatiser pour vous ?
+              Agents IA, chatbots et automatisation — cas concrets
             </h2>
             <p className="text-gray-600 max-w-lg mx-auto">
-              Des solutions concrètes d'automatisation des tâches, pas de la science-fiction
+              Des outils d'automatisation pour les entreprises de Polynésie, pas de la science-fiction
             </p>
           </FadeIn>
 

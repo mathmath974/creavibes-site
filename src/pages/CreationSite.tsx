@@ -52,12 +52,12 @@ const faqPageSchema = {
 };
 
 const features = [
-  { icon: Gauge, title: "Rapide", description: "Temps de chargement optimal, même avec la connexion polynésienne" },
-  { icon: Smartphone, title: "Mobile-first", description: "Parfait sur téléphone — là où vos clients vous cherchent" },
-  { icon: Search, title: "Référencé sur Google", description: "Visible dans les résultats de recherche à Tahiti et en Polynésie" },
-  { icon: ShoppingCart, title: "E-commerce", description: "Vendez en ligne avec un système de paiement adapté au marché local" },
-  { icon: Layers, title: "Sur-mesure", description: "Pas de template générique — un site à votre image, pour votre activité" },
-  { icon: Globe, title: "Multilingue", description: "Français, anglais, tahitien — touchez tous vos publics" },
+  { icon: Gauge, title: "Rapide", description: "Temps de chargement optimal, même avec la connexion polynésienne — indispensable pour convertir" },
+  { icon: Smartphone, title: "Mobile-first", description: "Parfait sur téléphone — là où 70 % de vos clients de Papeete et alentours vous cherchent" },
+  { icon: Search, title: "Référencé sur Google", description: "Visible dans les résultats de recherche à Tahiti, en Polynésie et pour les touristes" },
+  { icon: ShoppingCart, title: "Boutique en ligne", description: "Site e-commerce avec paiement adapté au marché polynésien — vendez 24h/24" },
+  { icon: Layers, title: "Sur-mesure ou refonte", description: "Création ou refonte de site existant — on reprend tout à zéro ou on améliore l'existant" },
+  { icon: Globe, title: "Multilingue", description: "Français, anglais, tahitien — touchez les locaux et les visiteurs internationaux" },
 ];
 
 function FAQItem({ question, answer, defaultOpen = false }: { question: string; answer: string; defaultOpen?: boolean }) {
@@ -89,8 +89,8 @@ export default function CreationSite() {
   return (
     <>
       <SEOHead
-        title="Création de site internet à Tahiti — Devis gratuit | CréaVibes"
-        description="Création de site internet rapide et optimisé à Tahiti et en Polynésie française. Devis gratuit sous 48h. Un site qui transforme vos visiteurs en clients. RDV visio gratuit."
+        title="Création de site internet à Tahiti | Devis gratuit — CréaVibes"
+        description="Création de site internet à Tahiti : site vitrine, e-commerce, refonte. Devis gratuit sous 48h pour Papeete, Punaauia, Faa'a et toute la Polynésie."
         path="/creation-site-internet-tahiti"
         jsonLd={[serviceSchema, faqPageSchema]}
       />
@@ -104,7 +104,7 @@ export default function CreationSite() {
                 Création de site internet à Tahiti — devis gratuit
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Nos services de création de sites web en Polynésie française vous offrent un site rapide, moderne et optimisé qui transforme vos visiteurs en clients. Site vitrine, e-commerce ou réservation — adapté à votre activité et au marché polynésien. Demandez votre devis site internet à Tahiti gratuitement.
+                Site vitrine, boutique en ligne ou refonte de site existant — nos services de création de sites web en Polynésie française s'adaptent à votre activité et à votre budget. Que vous soyez à Papeete, Punaauia, Faa'a ou ailleurs sur l'île, demandez votre devis site internet à Tahiti gratuitement.
               </p>
               <CTAButton size="lg" />
               <p className="mt-3 text-sm text-gray-500">Devis gratuit sous 48h — appel de 30 min, sans engagement</p>
@@ -127,10 +127,10 @@ export default function CreationSite() {
         <div className="container mx-auto px-4 md:px-6">
           <FadeIn className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Un site pensé pour votre réussite en Polynésie
+              Site vitrine, e-commerce ou refonte — tout est inclus
             </h2>
             <p className="text-gray-600 max-w-lg mx-auto">
-              Chaque création de site internet à Tahiti que nous réalisons est conçue pour attirer des clients et faire grandir votre activité.
+              Chaque création de site internet à Papeete, Punaauia ou Faa'a est conçue pour attirer des clients et transformer votre présence en ligne.
             </p>
           </FadeIn>
 
