@@ -6,26 +6,21 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, p);
 
 const template = fs.readFileSync(toAbsolute('dist/index.html'), 'utf-8');
-const { render } = await import('./dist/server/entry-server.js');
+const { render, blogArticles } = await import('./dist/server/entry-server.js');
 
-const routes = [
+const staticRoutes = [
   '/',
   '/creation-site-internet-tahiti',
   '/community-management-tahiti',
   '/creation-application-polynesie',
   '/automatisation-ia-tahiti',
   '/blog',
-  '/blog/aide-creation-numerique-acn-polynesie',
-  '/blog/community-management-tahiti-pourquoi-confier-page-facebook',
-  '/blog/creation-site-internet-tahiti-prix-conseils',
-  '/blog/automatisation-ia-pme-polynesie',
-  '/blog/google-business-profile-tahiti-visibilite',
-  '/blog/avis-clients-polynesie-reputation-en-ligne',
-  '/blog/reseaux-sociaux-ou-site-web-patente-tahiti',
-  '/blog/instagram-entreprise-tahiti-guide-debutant',
-  '/blog/strategie-digitale-petite-entreprise-polynesie',
   '/mentions-legales',
 ];
+
+const blogRoutes = blogArticles.map((a) => `/blog/${a.slug}`);
+
+const routes = [...staticRoutes, ...blogRoutes];
 
 for (const url of routes) {
   const { html: appHtml, helmet } = render(url);

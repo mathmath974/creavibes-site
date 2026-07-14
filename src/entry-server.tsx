@@ -3,6 +3,8 @@ import { StaticRouter } from 'react-router-dom/server';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 
+export { blogArticles } from './data/blog-articles';
+
 export function render(url: string) {
   const helmetContext: { helmet?: any } = {};
 
