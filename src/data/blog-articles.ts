@@ -27,6 +27,51 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "application-mobile-web-entreprise-tahiti",
+    title: "Application mobile ou web à Tahiti : votre entreprise en a-t-elle vraiment besoin ?",
+    metaTitle: "Application mobile à Tahiti : en avez-vous besoin ? | CréaVibes",
+    metaDescription: "Réservations, commandes, fidélité : quand une application mobile ou web devient utile pour une entreprise de Tahiti, et par où commencer sans se ruiner.",
+    excerpt: "Réservations, commandes en ligne, fidélité : découvrez quand une application mobile ou web devient vraiment utile pour votre entreprise à Tahiti.",
+    date: "2026-07-14",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Personne tenant un smartphone affichant une application mobile",
+    serviceLink: "/creation-application-polynesie",
+    serviceLinkLabel: "Découvrir notre service applications mobiles & web",
+    serviceLinks: [
+      { href: "/creation-application-polynesie", label: "Création d'application mobile & web en Polynésie" },
+      { href: "/blog/aide-creation-numerique-acn-polynesie", label: "Aide à la Création Numérique (ACN)" },
+    ],
+    sections: [
+      { type: 'p', content: "Vous avez déjà une page Facebook, peut-être un site internet. Et maintenant, on vous parle d'application mobile. Est-ce vraiment utile pour un patenté ou une petite entreprise de Tahiti, ou est-ce réservé aux grosses structures ? La réponse honnête : ça dépend de votre activité. Voici comment savoir si c'est fait pour vous — et par où commencer sans exploser votre budget." },
+      { type: 'h2', content: "À quoi sert une application quand on est une entreprise locale ?" },
+      { type: 'p', content: "Une application, ce n'est pas un gadget. C'est un outil qui automatise ce qui vous prend du temps aujourd'hui. Quelques exemples très concrets en Polynésie." },
+      { type: 'p', content: "Les réservations. Vous êtes restaurateur à Punaauia, coiffeuse à Papeete ou prestataire d'excursions à Moorea ? Chaque appel téléphonique pour un créneau, c'est du temps perdu — et un client qui tombe sur le répondeur, c'est parfois un client perdu. Une application (ou un module de réservation sur votre site) permet à vos clients de réserver seuls, même à 22 heures, même le dimanche." },
+      { type: 'p', content: "Les commandes. Snack, roulotte, pâtisserie : vos clients envoient leurs commandes par messages Facebook, par téléphone, parfois par SMS. Résultat : des erreurs, des oublis, du stress au coup de feu. Une app de commande centralise tout, avec l'heure de retrait et le paiement déjà réglé." },
+      { type: 'p', content: "La fidélité. La carte de fidélité en carton qui finit au fond du sac, on connaît. Une version numérique — points, récompenses, notifications — garde le lien avec vos clients réguliers et les fait revenir." },
+      { type: 'p', content: "La gestion interne. Certaines applications ne sont même pas destinées aux clients : suivi de stock, planning d'équipe, devis. Un outil sur mesure peut remplacer trois tableaux Excel et beaucoup de maux de tête." },
+      { type: 'h2', content: "Application mobile, application web : quelle différence ?" },
+      { type: 'p', content: "C'est là que beaucoup d'entrepreneurs s'y perdent, alors clarifions." },
+      { type: 'h3', content: "L'application mobile « native »" },
+      { type: 'p', content: "C'est celle qu'on télécharge sur l'App Store ou Google Play. Avantages : elle est installée sur le téléphone du client, peut envoyer des notifications et fonctionne de façon très fluide. Inconvénients : elle coûte plus cher à développer et demande une validation par Apple et Google." },
+      { type: 'h3', content: "L'application web (ou PWA)" },
+      { type: 'p', content: "Elle s'utilise directement depuis le navigateur, sans téléchargement, avec un simple lien. Une PWA (progressive web app) peut même s'ajouter à l'écran d'accueil du téléphone comme une vraie app. Pour la majorité des petites entreprises polynésiennes, c'est souvent le meilleur point de départ : moins chère, plus rapide à mettre en ligne, accessible à tous vos clients quel que soit leur téléphone." },
+      { type: 'p', content: "Notre conseil : commencez par définir le problème à résoudre (réservations, commandes, fidélité…), pas la technologie. C'est le besoin qui détermine la solution, jamais l'inverse." },
+      { type: 'h2', content: "Combien ça coûte, et existe-t-il des aides ?" },
+      { type: 'p', content: "Le budget dépend entièrement de la complexité : une application web de réservation simple n'a rien à voir avec une app native avec paiement intégré et espace client. Méfiez-vous des devis « au forfait » annoncés sans avoir étudié votre besoin." },
+      { type: 'p', content: "Bonne nouvelle pour les entreprises polynésiennes : le Pays soutient la transformation numérique. L'Aide à la Création Numérique (ACN) peut financer une partie de votre projet de site ou d'application — on vous explique tout dans notre article dédié à l'ACN. Les conditions et montants évoluent, donc vérifiez toujours les informations à jour auprès de la DGEN avant de déposer un dossier." },
+      { type: 'h2', content: "Les 3 questions à se poser avant de se lancer" },
+      { type: 'list', items: [
+        "Quelle tâche répétitive me prend le plus de temps chaque semaine ? Si la réponse implique le téléphone ou Messenger, une app peut probablement vous soulager.",
+        "Mes clients y gagneront-ils quelque chose ? Une application n'est adoptée que si elle simplifie la vie de vos clients : réserver plus vite, commander sans attendre, cumuler des avantages.",
+        "Ai-je déjà les fondations ? Une application fonctionne rarement seule. Une présence en ligne solide — site, fiche Google, réseaux sociaux — reste la base."
+      ]},
+      { type: 'h2', content: "Parlons de votre projet autour d'un café (virtuel)" },
+      { type: 'p', content: "Chez CréaVibes, on développe des applications mobiles et web pensées pour la Polynésie : simples, utiles, adaptées aux réalités locales. Pas de jargon, pas d'usine à gaz — juste l'outil qu'il vous faut." },
+      { type: 'p', content: "Vous vous demandez si une application a du sens pour votre activité ? Réservez un rendez-vous découverte en visio, gratuit et sans engagement : on regarde ensemble votre besoin, et on vous dit franchement si c'est pertinent — ou pas encore." },
+      { type: 'note', content: "Article informatif. Les dispositifs d'aide évoluent : vérifiez les conditions à jour auprès de la DGEN. CréaVibes ne garantit aucun résultat commercial ou de référencement chiffré.", source: { label: "Source officielle : DGEN — Aide à la Création Numérique", url: "https://www.service-public.pf/dgen/aide-a-la-creation-numerique-acn/" } },
+    ]
+  },
+  {
     slug: "aide-creation-numerique-acn-polynesie",
     title: "Aide à la Création Numérique (ACN) : faites financer jusqu'à 50 % de votre site ou application en Polynésie",
     metaTitle: "Aide à la Création Numérique (ACN) en Polynésie : 50 % financés | CréaVibes",
