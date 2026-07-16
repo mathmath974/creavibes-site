@@ -27,6 +27,49 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "site-internet-lent-tahiti-vitesse-conversion",
+    title: "Site internet lent à Tahiti : combien de clients perdez-vous ?",
+    metaTitle: "Site lent à Tahiti : vitesse et conversion | CréaVibes",
+    metaDescription: "Un site lent fait fuir vos clients à Tahiti. Causes fréquentes, tests gratuits et solutions concrètes pour un site rapide qui convertit vraiment.",
+    excerpt: "Trois secondes de trop, et votre visiteur est déjà reparti. Pourquoi la vitesse de votre site compte autant à Tahiti, et comment y remédier concrètement.",
+    date: "2026-07-16",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Ordinateur portable affichant du code, symbole d'un site web performant",
+    serviceLink: "/creation-site-internet-tahiti",
+    serviceLinkLabel: "Découvrir notre service création de site internet",
+    serviceLinks: [
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+      { href: "/blog/creation-site-internet-tahiti-prix-conseils", label: "Prix d'un site internet à Tahiti : nos conseils" },
+    ],
+    sections: [
+      { type: 'p', content: "Faites le test : ouvrez votre site depuis votre téléphone, en 4G, comme le ferait un client. Il met combien de temps à s'afficher ? Si la réponse est « plusieurs secondes », vous perdez probablement des clients sans le savoir. À Tahiti comme ailleurs, la patience des internautes est courte : un site qui rame, c'est un visiteur qui repart — souvent chez un concurrent. Voyons pourquoi la vitesse compte autant, et surtout comment l'améliorer sans tout casser." },
+      { type: 'h2', content: "Pourquoi un site lent vous coûte des clients" },
+      { type: 'p', content: "Plusieurs études internationales le montrent depuis des années : plus une page met de temps à charger, plus la proportion de visiteurs qui abandonnent augmente. Au-delà de quelques secondes d'attente, une grande partie des internautes ferme l'onglet avant même d'avoir vu votre contenu. Et ceux qui restent gardent une impression négative : un site lent renvoie, à tort ou à raison, l'image d'une entreprise peu soignée." },
+      { type: 'p', content: "En Polynésie, le sujet est encore plus concret. Une bonne partie de vos clients navigue sur mobile, parfois avec une connexion capricieuse — dans les vallées, sur l'eau, dans les îles. Un site pensé pour la fibre d'un bureau parisien peut devenir inutilisable sur un téléphone à Moorea. Si votre clientèle est locale, votre site doit être rapide dans les conditions locales." },
+      { type: 'p', content: "Il y a aussi l'enjeu du référencement : Google prend en compte l'expérience de chargement des pages dans son classement. Un site rapide ne garantit pas la première position, mais un site très lent, lui, part avec un vrai handicap." },
+      { type: 'h2', content: "Les causes les plus fréquentes (et les plus faciles à corriger)" },
+      { type: 'h3', content: "Des images trop lourdes" },
+      { type: 'p', content: "C'est la cause numéro un. Une photo sortie directement du téléphone pèse plusieurs mégaoctets ; sur une page qui en affiche dix, l'addition est vite salée. La solution : redimensionner et compresser les images (formats modernes comme le WebP), sans perte visible de qualité. C'est invisible pour vos clients, mais radical sur le temps de chargement." },
+      { type: 'h3', content: "Un thème ou des extensions surchargés" },
+      { type: 'p', content: "Beaucoup de sites reposent sur des thèmes « tout-en-un » bourrés de fonctionnalités jamais utilisées : sliders animés, popups, effets en cascade. Chaque option ajoute du code à télécharger. Un site sobre et bien construit sera presque toujours plus rapide qu'un site suréquipé." },
+      { type: 'h3', content: "Un hébergement inadapté" },
+      { type: 'p', content: "L'hébergement, c'est le moteur de votre site. Un hébergement d'entrée de gamme saturé peut ralentir même un site bien conçu. Un serveur correctement dimensionné, avec un système de cache, change complètement l'expérience de navigation." },
+      { type: 'h2', content: "Comment tester la vitesse de votre site gratuitement" },
+      { type: 'list', items: [
+        "PageSpeed Insights (pagespeed.web.dev) : l'outil gratuit de Google. Entrez l'adresse de votre site et regardez surtout le score mobile — c'est lui qui reflète l'expérience de vos clients à Tahiti.",
+        "Le test du téléphone : ouvrez votre site en 4G, sans wifi, et chronométrez. Si vous trouvez ça long, vos clients aussi.",
+        "Le regard extérieur : demandez à un proche de trouver une information précise sur votre site (horaires, tarifs, contact). S'il galère, il y a du travail au-delà de la vitesse."
+      ]},
+      { type: 'h2', content: "Vitesse et conversion : un site rapide qui vend" },
+      { type: 'p', content: "La vitesse n'est pas une fin en soi : c'est la première marche de la conversion. Un visiteur qui accède vite à votre page doit ensuite trouver en quelques secondes ce qu'il cherche : ce que vous proposez, où vous êtes, comment vous contacter ou réserver. Page d'accueil claire, bouton d'action visible, numéro cliquable depuis le mobile : ces détails transforment une simple visite en appel, en réservation ou en commande." },
+      { type: 'p', content: "C'est exactement l'approche que nous défendons chez CréaVibes pour la création de site internet à Tahiti : des sites légers, rapides sur mobile et pensés pour convertir — pas des vitrines décoratives. Et si vous vous interrogez sur le budget, notre article sur le prix d'un site internet à Tahiti vous donnera des repères honnêtes." },
+      { type: 'h2', content: "Votre site mérite un diagnostic honnête" },
+      { type: 'p', content: "Vous avez testé votre site et le score fait grimacer ? Pas de panique : dans bien des cas, quelques optimisations ciblées suffisent à retrouver un site fluide. Et si le site est trop ancien, mieux vaut le savoir avant d'investir dans la publicité pour y envoyer des visiteurs qui fuiront." },
+      { type: 'p', content: "Réservez un rendez-vous découverte en visio, gratuit et sans engagement : on regarde ensemble votre site, on identifie ce qui le ralentit, et on vous dit franchement ce qui vaut la peine d'être fait — ou pas." },
+      { type: 'note', content: "Article informatif. Les performances d'un site dépendent de nombreux facteurs : CréaVibes ne garantit aucun résultat de référencement ou de trafic chiffré." },
+    ]
+  },
+  {
     slug: "application-mobile-web-entreprise-tahiti",
     title: "Application mobile ou web à Tahiti : votre entreprise en a-t-elle vraiment besoin ?",
     metaTitle: "Application mobile à Tahiti : en avez-vous besoin ? | CréaVibes",
