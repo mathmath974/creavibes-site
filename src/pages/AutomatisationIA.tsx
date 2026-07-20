@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion';
-import { Cpu, MessageSquare, FileText, BarChart3, Clock, Repeat, Database, ChevronDown } from 'lucide-react';
+import {
+  Cpu, MessageSquare, FileText, BarChart3, Clock, Repeat, Database, ChevronDown,
+  Send, Receipt, CalendarCheck, Boxes, Hotel, UtensilsCrossed, ShoppingBag,
+  Hammer, Briefcase, Search, Wrench, Rocket, GraduationCap, Link2,
+} from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SEOHead from '../components/SEOHead';
 import CTAButton from '../components/CTAButton';
 import FadeIn from '../components/FadeIn';
@@ -16,20 +21,24 @@ const serviceSchema = {
 
 const faqData = [
   {
-    question: "Faut-il être technique pour utiliser l'automatisation IA ?",
-    answer: "Non. C'est nous qui configurons tout. On vous forme sur l'utilisation (c'est simple, promis) et on reste disponible pour ajuster. Votre seul travail : nous dire ce qui vous prend du temps au quotidien.",
-  },
-  {
     question: "Combien coûte une automatisation IA pour une PME à Tahiti ?",
-    answer: "Une automatisation simple (chatbot, relances automatiques) démarre à partir de 50 000 F. Un projet plus complet (CRM intelligent, reporting automatisé, exploitation de données) se situe entre 100 000 F et 300 000 F. L'investissement se rentabilise en 1 à 2 mois grâce au temps gagné.",
+    answer: "Une automatisation simple (chatbot, relances automatiques de devis) démarre à partir de 50 000 F. Un projet plus complet (agent IA, CRM intelligent, reporting automatisé, suivi de stocks) se situe entre 100 000 F et 300 000 F. L'investissement se rentabilise en 1 à 2 mois grâce aux heures gagnées chaque semaine. On vous remet un devis gratuit et détaillé après l'audit, sans surprise.",
   },
   {
-    question: "Quels types de tâches peut-on automatiser concrètement ?",
-    answer: "Tout ce qui est répétitif et chronophage : réponses aux questions fréquentes, envoi de devis et factures, relances clients, tri d'emails, génération de posts pour les réseaux sociaux, reporting mensuel, mise à jour de fichiers clients. Si vous faites la même chose plus de 3 fois par semaine, on peut probablement l'automatiser.",
+    question: "Combien de temps faut-il pour mettre en place une automatisation ?",
+    answer: "Une automatisation simple (relance de devis, chatbot de base, prise de rendez-vous) est opérationnelle en 1 à 2 semaines. Un projet plus complet avec plusieurs outils connectés et un agent IA prend généralement 3 à 6 semaines. On vous donne un calendrier précis dès l'audit, et on avance par étapes pour que vous voyiez les premiers résultats rapidement.",
   },
   {
-    question: "L'IA peut-elle exploiter les données de mon entreprise ?",
-    answer: "Oui. On peut mettre en place des tableaux de bord intelligents qui analysent vos ventes, votre trafic ou vos performances. L'IA identifie les tendances, vous alerte sur les anomalies et vous propose des recommandations. Vos données deviennent un atout stratégique au lieu de dormir dans un fichier Excel.",
+    question: "Est-ce que l'automatisation IA est réservée aux grandes entreprises ?",
+    answer: "Non, c'est même souvent l'inverse. Les petites entreprises et patentés de Polynésie sont ceux qui gagnent le plus : moins de personnel, plus de tâches répétitives à gérer seul. Une pension de famille, un snack, un artisan ou un cabinet de services peut automatiser ses relances, sa facturation ou ses rendez-vous sans aucune équipe technique. On configure tout, on vous forme, et ça tourne seul.",
+  },
+  {
+    question: "Quels outils utilisez-vous pour l'automatisation en Polynésie ?",
+    answer: "On choisit les outils selon votre besoin et vos outils existants : Make et n8n pour connecter vos applications, des agents IA basés sur les modèles récents d'OpenAI et Anthropic pour le traitement du langage, des chatbots intégrés à Messenger et WhatsApp, Google Sheets ou Airtable comme base légère, et des connecteurs vers votre CRM ou votre site. On privilégie les solutions durables et compatibles avec les réalités locales.",
+  },
+  {
+    question: "Est-ce que l'automatisation IA est éligible à l'aide ACN ?",
+    answer: "Oui, dans de nombreux cas. L'Aide à la Création Numérique (ACN) de la DGEN peut financer jusqu'à 50 % d'un projet numérique en Polynésie, dont la conception d'outils sur mesure comme une application ou une automatisation intégrée. Il faut déposer la demande avant de lancer le projet. On vous fournit le devis détaillé et les justificatifs nécessaires. Vérifiez toujours les conditions à jour auprès de la DGEN.",
   },
 ];
 
@@ -55,13 +64,110 @@ const useCases = [
   { icon: Cpu, title: "CRM intelligent", desc: "Votre fichier client se met à jour tout seul, les relances partent au bon moment." },
 ];
 
-const concreteExamples = [
-  { task: "Répondre aux messages Facebook (questions fréquentes)", before: "30 min/jour", after: "Automatique 24h/24" },
-  { task: "Rédiger les publications réseaux sociaux", before: "3h/semaine", after: "15 min de validation" },
-  { task: "Envoyer les devis après une demande", before: "Délai 24-48h", after: "Envoi immédiat" },
-  { task: "Relancer les prospects sans réponse", before: "Oublié 1 fois sur 2", after: "Relance auto J+2 et J+7" },
-  { task: "Générer le reporting mensuel", before: "2h de tableur", after: "Rapport automatique le 1er du mois" },
-  { task: "Trier et classer les emails entrants", before: "20 min/jour", after: "Tri intelligent automatique" },
+const detailedUseCases = [
+  {
+    icon: Send,
+    title: "Relance automatique des devis",
+    desc: "Dès qu'un prospect demande un devis, l'agent IA prépare une proposition à partir de vos tarifs, puis relance automatiquement à J+2 et J+7 si aucune réponse. Fini les devis oubliés dans un coin.",
+    before: "1 devis sur 2 oublié",
+    after: "Relance auto J+2 et J+7",
+    gain: "~3 h / semaine",
+  },
+  {
+    icon: MessageSquare,
+    title: "Réponses automatiques aux messages clients",
+    desc: "Un chatbot connecté à votre page Facebook et à WhatsApp répond aux questions fréquentes (horaires, tarifs, disponibilités) et collecte les infos utiles. Vous ne traitez que les vraies demandes.",
+    before: "30 min / jour",
+    after: "5 min de validation",
+    gain: "~3 h / semaine",
+  },
+  {
+    icon: Receipt,
+    title: "Génération de factures",
+    desc: "À chaque commande ou fin de mission, la facture est générée automatiquement, numérotée, envoyée au client et archivée. Plus de risque d'oubli ni d'erreur de saisie.",
+    before: "2 h / mois",
+    after: "Généré en 1 clic",
+    gain: "~2 h / mois",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Prise de rendez-vous",
+    desc: "Vos clients réservent seuls en ligne selon vos disponibilités. L'outil envoie la confirmation, le rappel la veille et ajoute le RDV à votre agenda. Plus besoin d'aller-retour au téléphone.",
+    before: "Allers-retours téléphone",
+    after: "Réservation 24h/24",
+    gain: "~4 h / semaine",
+  },
+  {
+    icon: Boxes,
+    title: "Suivi des stocks",
+    desc: "Chaque vente met à jour votre stock en temps réel. L'agent IA vous alerte quand un produit descend sous un seuil et propose une commande de réapprovisionnement.",
+    before: "Inventaire mensuel 4 h",
+    after: "Alertes automatiques",
+    gain: "~4 h / mois",
+  },
+  {
+    icon: BarChart3,
+    title: "Reporting mensuel",
+    desc: "Le 1er de chaque mois, vous recevez un rapport clair : chiffre d'affaires, meilleures ventes, provenance des demandes, taux de transformation. Vos données deviennent un atout stratégique.",
+    before: "2 h de tableur",
+    after: "Rapport auto le 1er",
+    gain: "~2 h / mois",
+  },
+];
+
+const sectors = [
+  {
+    icon: Hotel,
+    title: "Hôtellerie et pension de famille",
+    desc: "Réservations automatiques, envoi des confirmations et rappels, réponses aux questions fréquentes (tarifs, disponibilités, accès), suivi des avis clients. Le chatbot répond en français et en anglais, 24h/24, pendant que vous gérez l'accueil.",
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Restauration",
+    desc: "Prise de commandes en ligne pour le click & collect, envoi automatique du menu aux curieux sur Messenger, relance des clients pour déposer un avis. Le reporting mensuel vous montre vos plats les plus vendus sans ouvrir un tableur.",
+  },
+  {
+    icon: ShoppingBag,
+    title: "Commerce de détail",
+    desc: "Mise à jour automatique des stocks à chaque vente, alertes de réapprovisionnement, génération de visuels pour vos promotions, relance des clients qui n'ont pas finalisé leur panier. Vos données de vente deviennent un vrai tableau de bord.",
+  },
+  {
+    icon: Hammer,
+    title: "Artisan et patente",
+    desc: "Devis pré-remplis à partir de vos tarifs, relances automatiques, facturation à la fin du chantier, agenda partagé pour vos interventions. L'agent IA rédige même les descriptions de vos réalisations pour vos réseaux sociaux.",
+  },
+  {
+    icon: Briefcase,
+    title: "Cabinet de services",
+    desc: "Prise de rendez-vous en ligne, envoi des rappels, collecte des documents clients avant la consultation, génération de comptes-rendus, suivi des relances impayées. Vous gagnez un assistant qui ne dort jamais.",
+  },
+];
+
+const steps = [
+  {
+    icon: Search,
+    step: "1",
+    title: "Audit de vos tâches répétitives",
+    desc: "En visio, on passe en revue ce qui vous prend du temps chaque semaine : messages clients, devis, factures, agenda, stocks, reporting. On identifie ensemble les tâches que l'on peut automatiser et on estime le gain de temps attendu.",
+  },
+  {
+    icon: Wrench,
+    step: "2",
+    title: "Choix des outils",
+    desc: "Selon votre activité et vos outils actuels, on sélectionne les solutions adaptées : chatbot, agent IA, connecteurs vers votre CRM ou votre site, base de données légère. On vous explique chaque choix en langage simple, sans jargon.",
+  },
+  {
+    icon: Rocket,
+    step: "3",
+    title: "Mise en place",
+    desc: "On configure les automatisations, on les connecte à vos outils existants et on les teste en conditions réelles. Vous validez chaque étape. Une automatisation simple est opérationnelle en 1 à 2 semaines, un projet complet en 3 à 6 semaines.",
+  },
+  {
+    icon: GraduationCap,
+    step: "4",
+    title: "Formation et suivi",
+    desc: "On vous forme à l'utilisation (c'est simple, promis), on documente tout, et on reste disponible pour ajuster. Les automatisations tournent seules, et on vérifie chaque mois que tout fonctionne comme prévu.",
+  },
 ];
 
 function FAQItem({ question, answer, defaultOpen = false }: { question: string; answer: string; defaultOpen?: boolean }) {
@@ -101,7 +207,7 @@ export default function AutomatisationIA() {
                 Automatisation et IA pour les entreprises de Polynésie
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Agents IA, chatbots et outils d'automatisation pour les entreprises à Tahiti : gagnez des heures chaque semaine en automatisant vos tâches répétitives. Intelligence artificielle pour PME, exploitation de vos données et CRM intelligent — on configure tout, vous profitez du temps gagné.
+                Agents IA, chatbots et outils d'automatisation pour les entreprises à Tahiti : gagnez des heures chaque semaine en automatisant vos tâches répétitives. Intelligence artificielle pour PME en Polynésie, exploitation de vos données et CRM intelligent — on configure tout, vous profitez du temps gagné.
               </p>
               <CTAButton size="lg" />
               <p className="mt-3 text-sm text-gray-500">Devis gratuit — appel découverte de 30 min</p>
@@ -150,71 +256,168 @@ export default function AutomatisationIA() {
         </div>
       </section>
 
-      {/* Concrete examples table */}
+      {/* Cas d'usage concrets détaillés */}
       <section className="py-16 md:py-24 bg-violet-50">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          <FadeIn className="text-center mb-10">
+        <div className="container mx-auto px-4 md:px-6">
+          <FadeIn className="text-center mb-12">
             <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mx-auto mb-5">
               <Database className="w-6 h-6 text-violet-600" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Exemples concrets : avant et après automatisation
+              Cas d'usage concrets avec gain de temps chiffré
             </h2>
-            <p className="text-gray-600 max-w-lg mx-auto">
-              Voici ce que l'automatisation change concrètement au quotidien pour les entreprises à Tahiti
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Voici six automatisations que l'on met en place pour les entreprises à Tahiti, avec le gain de temps estimé. L'automatisation des tâches vous libère pour ce qui compte vraiment : vos clients et votre activité.
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.1}>
-            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-              <div className="grid grid-cols-3 bg-gray-50 border-b border-gray-200 p-4 text-sm font-semibold text-gray-700">
-                <span>Tâche</span>
-                <span className="text-center">Avant</span>
-                <span className="text-center">Après IA</span>
-              </div>
-              {concreteExamples.map((ex, i) => (
-                <div key={i} className={`grid grid-cols-3 p-4 text-sm items-center ${i < concreteExamples.length - 1 ? 'border-b border-gray-100' : ''}`}>
-                  <span className="text-gray-800 font-medium pr-2">{ex.task}</span>
-                  <span className="text-center text-gray-500">{ex.before}</span>
-                  <span className="text-center text-violet-600 font-medium">{ex.after}</span>
-                </div>
-              ))}
-            </div>
-          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {detailedUseCases.map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.08}>
+                <motion.div
+                  whileHover={{ y: -3 }}
+                  className="h-full p-6 rounded-xl bg-white border border-gray-200 hover:border-violet-200 hover:shadow-md transition-all"
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-10 h-10 bg-violet-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-5 h-5 text-violet-600" />
+                    </div>
+                    <h3 className="font-bold text-gray-900 pt-1">{item.title}</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{item.desc}</p>
+                  <div className="grid grid-cols-2 gap-3 pt-4 border-t border-gray-100">
+                    <div>
+                      <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">Avant</p>
+                      <p className="text-sm text-gray-500">{item.before}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">Après IA</p>
+                      <p className="text-sm text-violet-600 font-medium">{item.after}</p>
+                    </div>
+                  </div>
+                  <div className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600">
+                    <Clock className="w-4 h-4" />
+                    Gain : {item.gain}
+                  </div>
+                </motion.div>
+              </FadeIn>
+            ))}
+          </div>
 
-          <FadeIn className="text-center mt-8">
+          <FadeIn className="text-center mt-10">
             <CTAButton />
           </FadeIn>
         </div>
       </section>
 
-      {/* How it works */}
+      {/* Par secteur d'activité */}
       <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+          <FadeIn className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Par secteur d'activité en Polynésie
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              L'automatisation s'adapte à votre métier. Voici des exemples concrets pour les principales activités du fenua.
+            </p>
+          </FadeIn>
+
+          <div className="space-y-4">
+            {sectors.map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.06}>
+                <motion.div
+                  whileHover={{ y: -2 }}
+                  className="flex flex-col sm:flex-row gap-5 p-6 rounded-xl border border-gray-200 hover:border-violet-200 hover:shadow-md transition-all"
+                >
+                  <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-violet-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </motion.div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comment on procède */}
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <FadeIn className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Comment ça marche ?</h2>
-            <p className="text-gray-600">Pas besoin d'être technique — on s'occupe de tout.</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Comment on procède</h2>
+            <p className="text-gray-600">Pas besoin d'être technique — on s'occupe de tout, de l'audit à la formation.</p>
           </FadeIn>
 
           <div className="space-y-6">
-            {[
-              { step: "1", title: "On identifie les tâches répétitives", desc: "Ensemble, on liste tout ce qui vous prend du temps et qui pourrait tourner tout seul." },
-              { step: "2", title: "On propose des solutions", desc: "On vous montre concrètement ce que l'IA et l'exploitation de vos données peuvent faire pour vous." },
-              { step: "3", title: "On met en place", desc: "On configure les automatisations, on les connecte à vos outils existants." },
-              { step: "4", title: "Vous profitez du temps gagné", desc: "Les automatisations tournent, vous êtes formé, et on reste disponible pour ajuster." },
-            ].map((item, i) => (
+            {steps.map((item, i) => (
               <FadeIn key={item.step} delay={i * 0.1}>
-                <div className="flex gap-4 items-start p-5 bg-gray-50 rounded-xl border border-gray-200">
-                  <div className="w-10 h-10 bg-violet-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                    {item.step}
+                <div className="flex gap-4 items-start p-6 bg-white rounded-xl border border-gray-200 hover:border-violet-200 transition">
+                  <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-violet-600" />
                   </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="w-7 h-7 bg-violet-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        {item.step}
+                      </span>
+                      <h3 className="font-bold text-gray-900">{item.title}</h3>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </FadeIn>
             ))}
+          </div>
+
+          <FadeIn className="text-center mt-10">
+            <CTAButton />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Liens internes / aller plus loin */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+          <FadeIn className="text-center mb-10">
+            <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mx-auto mb-5">
+              <Link2 className="w-6 h-6 text-violet-600" />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Aller plus loin</h2>
+            <p className="text-gray-600 max-w-lg mx-auto">
+              L'automatisation prend tout son sens quand elle est reliée à vos autres outils numériques.
+            </p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <FadeIn>
+              <Link
+                to="/creation-application-polynesie"
+                className="block p-6 rounded-xl border border-gray-200 hover:border-violet-200 hover:shadow-md transition-all group"
+              >
+                <h3 className="font-bold text-gray-900 mb-2 group-hover:text-violet-600 transition">
+                  Créer une application mobile en Polynésie
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Une application sur mesure (réservations, commandes, fidélité) est le parfait terrain pour vos automatisations : l'agent IA s'y connecte et fait travailler l'outil pour vous, de jour comme de nuit.
+                </p>
+              </Link>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <Link
+                to="/blog/aide-creation-numerique-acn-polynesie"
+                className="block p-6 rounded-xl border border-gray-200 hover:border-violet-200 hover:shadow-md transition-all group"
+              >
+                <h3 className="font-bold text-gray-900 mb-2 group-hover:text-violet-600 transition">
+                  Aide à la Création Numérique (ACN) : jusqu'à 50 % financé
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  L'ACN de la DGEN peut financer jusqu'à 50 % de votre projet numérique en Polynésie. Conditions, montants et démarches expliqués en détail dans notre article dédié.
+                </p>
+              </Link>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -226,6 +429,9 @@ export default function AutomatisationIA() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               Questions fréquentes — Automatisation IA à Tahiti
             </h2>
+            <p className="text-gray-600 max-w-lg mx-auto">
+              Tout ce que les PME polynésiennes nous demandent avant de se lancer.
+            </p>
           </FadeIn>
 
           <div className="space-y-3">
