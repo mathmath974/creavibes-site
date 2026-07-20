@@ -89,8 +89,8 @@ export default function CreationSite() {
   return (
     <>
       <SEOHead
-        title="Création de site internet à Tahiti | Devis gratuit — CréaVibes"
-        description="Création de site internet à Tahiti : site vitrine, e-commerce, refonte. Devis gratuit sous 48h pour Papeete, Punaauia, Faa'a et toute la Polynésie."
+        title="Création de site internet à Tahiti - devis gratuit | CreaVibes"
+        description="Site vitrine ou boutique en ligne à Tahiti. Jusqu'à 50 pour cent financé par l'aide ACN. Devis gratuit, sans engagement, RDV visio de 30 min."
         path="/creation-site-internet-tahiti"
         jsonLd={[serviceSchema, faqPageSchema]}
       />

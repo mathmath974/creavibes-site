@@ -77,8 +77,8 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="Agence web et digitale à Tahiti | Sites, apps, réseaux sociaux et IA — CréaVibes"
-        description="Agence web à Tahiti : création de sites internet, applications mobiles, community management et automatisation IA en Polynésie française. Devis gratuit."
+        title="Agence web à Tahiti - sites, réseaux sociaux, apps et IA | CreaVibes"
+        description="Agence digitale en Polynésie française : site internet, community management, applications et automatisation IA. Devis gratuit et RDV visio de 30 min."
         path="/"
       />
 

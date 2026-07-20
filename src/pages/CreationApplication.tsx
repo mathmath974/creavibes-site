@@ -77,8 +77,8 @@ export default function CreationApplication() {
   return (
     <>
       <SEOHead
-        title="Création d'application mobile en Polynésie | Devis — CréaVibes"
-        description="Créer une application mobile à Tahiti : développement d'appli iOS/Android, application web sur mesure, PWA et logiciel personnalisé en Polynésie. Devis gratuit."
+        title="Créer une application mobile en Polynésie - devis gratuit"
+        description="Application mobile, web ou logiciel sur mesure pour votre entreprise en Polynésie. Jusqu'à 50 pour cent financé par l'aide ACN. Devis gratuit."
         path="/creation-application-polynesie"
         jsonLd={[serviceSchema, faqPageSchema]}
       />

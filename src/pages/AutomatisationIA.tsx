@@ -86,8 +86,8 @@ export default function AutomatisationIA() {
   return (
     <>
       <SEOHead
-        title="Automatisation et IA pour entreprises à Tahiti | CréaVibes"
-        description="Outils d'automatisation et intelligence artificielle pour PME à Tahiti : agents IA, chatbots, automatisation des tâches. Devis gratuit."
+        title="Automatisation et IA pour entreprises à Tahiti - gagnez des heures"
+        description="Agents IA, chatbots et automatisation des tâches pour les PME de Polynésie. Cas d'usage concrets, devis gratuit et RDV visio de 30 min."
         path="/automatisation-ia-tahiti"
         jsonLd={[serviceSchema, faqPageSchema]}
       />

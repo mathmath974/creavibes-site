@@ -79,8 +79,8 @@ export default function CommunityManagement() {
   return (
     <>
       <SEOHead
-        title="Community management à Tahiti | Gestion réseaux sociaux — CréaVibes"
-        description="Community manager en Polynésie : gestion de page Facebook et Instagram pour entreprises à Tahiti, Papeete, Punaauia. 18 000 F/mois sans engagement."
+        title="Community management Tahiti - 18 000 F/mois sans engagement"
+        description="Votre page Facebook et Instagram gérée de A à Z : 8 publications par mois, visuels pros et stratégie. 18 000 F/mois, sans engagement. RDV visio gratuit."
         path="/community-management-tahiti"
         jsonLd={[serviceSchema, faqPageSchema]}
       />
