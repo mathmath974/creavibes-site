@@ -27,6 +27,50 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "seo-local-tahiti-apparaitre-sur-google",
+    title: "SEO local à Tahiti : comment apparaître sur Google quand vos clients cherchent ici",
+    metaTitle: "SEO local à Tahiti : être trouvé sur Google | CréaVibes",
+    metaDescription: "Le SEO local, c'est apparaître sur Google quand un client de Tahiti cherche vos services. Méthode concrète pour patentés et petites entreprises.",
+    excerpt: "Quand un client tape « snack Punaauia » ou « électricien Papeete », c'est le SEO local qui décide qui il trouve en premier. Voici comment mettre toutes les chances de votre côté.",
+    date: "2026-07-22",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Ordinateur portable affichant des courbes de trafic et de recherche web",
+    serviceLink: "/creation-site-internet-tahiti",
+    serviceLinkLabel: "Découvrir notre service création de site internet",
+    serviceLinks: [
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+      { href: "/community-management-tahiti", label: "Community management à Tahiti" },
+      { href: "/blog/google-business-profile-tahiti-visibilite", label: "Google Business Profile : le guide pour Tahiti" },
+    ],
+    sections: [
+      { type: 'p', content: "Faites l'expérience : tapez « snack Punaauia », « coiffeur Papeete » ou « électricien Taravao » dans Google. Les entreprises qui s'affichent en premier ne sont pas forcément les meilleures, ni les plus anciennes. Ce sont celles qui ont travaillé — parfois sans le savoir — leur référencement local. Bonne nouvelle : le SEO local n'est ni réservé aux grosses structures, ni hors de portée d'un patenté. C'est même l'un des leviers les plus rentables pour une petite entreprise polynésienne, parce qu'il touche des gens qui cherchent activement vos services, ici et maintenant." },
+      { type: 'h2', content: "Le SEO local, c'est quoi au juste ?" },
+      { type: 'p', content: "Le référencement local, c'est l'ensemble des actions qui aident Google à comprendre trois choses : ce que vous faites, où vous le faites, et pourquoi il devrait vous montrer plutôt qu'un autre. Quand quelqu'un cherche un service « près de moi » ou associé à une commune — Papeete, Punaauia, Moorea, Taravao — Google croise la position de l'internaute, les fiches d'établissement, les avis et le contenu des sites pour composer ses résultats. Chacun de ces signaux se travaille." },
+      { type: 'h2', content: "Pourquoi c'est particulièrement stratégique en Polynésie" },
+      { type: 'p', content: "À Tahiti, l'essentiel des recherches se fait sur mobile, souvent au moment précis du besoin : on cherche un garagiste quand la voiture est en panne, un traiteur quand la date de l'événement approche. Être visible à cet instant-là vaut toutes les publicités. Et contrairement à un marché métropolitain saturé, la concurrence locale sur Google reste modérée dans beaucoup de secteurs : bien des patentés n'ont ni fiche complète, ni site à jour. Quelques efforts bien placés suffisent souvent à se démarquer nettement." },
+      { type: 'h2', content: "Les quatre piliers d'un bon référencement local" },
+      { type: 'h3', content: "1. Une fiche Google Business Profile complète et vivante" },
+      { type: 'p', content: "C'est la fondation. Horaires exacts, photos récentes, description claire de vos services, catégorie bien choisie, publications régulières : une fiche soignée est souvent le premier contact entre un client et votre entreprise. Nous lui avons consacré un guide complet, à retrouver dans les liens en bas de cet article." },
+      { type: 'h3', content: "2. Un site qui parle vraiment de Tahiti" },
+      { type: 'p', content: "Google ne peut pas deviner que vous travaillez à Punaauia si votre site ne le dit nulle part. Mentionnez naturellement vos zones d'intervention, vos communes, vos îles. Une page par service, avec un vocabulaire local et des exemples concrets, vaut mieux qu'une page d'accueil fourre-tout. Et un site rapide sur mobile reste indispensable : c'est là que vos clients vous cherchent." },
+      { type: 'h3', content: "3. Des avis clients réguliers" },
+      { type: 'p', content: "Les avis pèsent lourd dans le classement local — et encore plus dans la décision du client. Prenez l'habitude d'en demander après chaque prestation réussie, et répondez à tous, y compris aux critiques, avec calme et professionnalisme. Un flux d'avis récents montre à Google, et aux clients, que votre entreprise est active." },
+      { type: 'h3', content: "4. Des informations cohérentes partout" },
+      { type: 'p', content: "Nom, adresse, téléphone : ces informations doivent être identiques sur votre site, votre fiche Google, votre page Facebook et vos annuaires. Les incohérences sèment le doute chez Google comme chez vos clients. Un numéro qui change d'une plateforme à l'autre, et c'est votre crédibilité qui s'effrite." },
+      { type: 'h2', content: "Les erreurs qui plombent votre visibilité locale" },
+      { type: 'list', items: [
+        "Créer sa fiche Google puis l'abandonner : une fiche sans photos récentes ni réponses aux avis renvoie l'image d'une entreprise fermée.",
+        "Un site sans aucune mention géographique : Google ne sait pas où vous situer, il ne vous montrera à personne.",
+        "Acheter ou fabriquer de faux avis : la sanction peut être lourde, et les clients locaux le repèrent vite — le fenua est petit.",
+        "Tout miser sur Facebook sans présence Google : les deux sont complémentaires, pas interchangeables."
+      ]},
+      { type: 'h2', content: "Par où commencer, concrètement ?" },
+      { type: 'p', content: "Commencez par chercher votre propre activité sur Google, comme le ferait un client : « votre métier + votre commune ». Si vous n'apparaissez ni dans la carte ni dans les premiers résultats, vous savez ce qu'il vous reste à faire. Complétez votre fiche Google, demandez trois avis à vos meilleurs clients cette semaine, et vérifiez que votre site mentionne clairement vos services et votre zone. Ce sont des actions simples, mais leur régularité fait la différence." },
+      { type: 'p', content: "Chez CréaVibes, nous construisons des sites pensés pour le référencement local dès la première ligne, et nous accompagnons les entreprises du fenua sur leur visibilité Google et réseaux sociaux. Si vous voulez un diagnostic honnête de votre présence en ligne, réservez un rendez-vous découverte en visio : c'est gratuit, sans engagement, et vous repartirez avec des pistes concrètes — que vous travailliez avec nous ou non." },
+      { type: 'note', content: "Article informatif. Le référencement dépend de nombreux facteurs et évolue avec les algorithmes : CréaVibes ne garantit aucune position ni aucun résultat chiffré sur Google." },
+    ]
+  },
+  {
     slug: "site-internet-lent-tahiti-vitesse-conversion",
     title: "Site internet lent à Tahiti : combien de clients perdez-vous ?",
     metaTitle: "Site lent à Tahiti : vitesse et conversion | CréaVibes",
