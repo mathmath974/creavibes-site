@@ -27,6 +27,54 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "idees-publications-facebook-patente-tahiti",
+    title: "Que publier sur votre page Facebook ? 10 idées pour les patentés de Tahiti",
+    metaTitle: "Que publier sur Facebook ? 10 idées à Tahiti | CréaVibes",
+    metaDescription: "Panne d'inspiration ? 10 idées de publications Facebook concrètes pour patentés et petites entreprises de Tahiti, avec conseils pour engager vos clients.",
+    excerpt: "La page blanche devant votre page Facebook, ça arrive à tous les patentés. Voici 10 idées de publications concrètes, pensées pour les entreprises du fenua.",
+    date: "2026-07-29",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Personne préparant une publication Facebook sur son smartphone",
+    serviceLink: "/community-management-tahiti",
+    serviceLinkLabel: "Découvrir notre offre community management",
+    serviceLinks: [
+      { href: "/community-management-tahiti", label: "Community management à Tahiti" },
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+      { href: "/blog/instagram-entreprise-tahiti-guide-debutant", label: "Instagram pour les entreprises de Tahiti : le guide" },
+    ],
+    sections: [
+      { type: 'p', content: "Vous ouvrez Facebook, prêt à publier quelque chose pour votre activité… et rien ne vient. La fameuse page blanche. C'est l'une des raisons les plus fréquentes pour lesquelles les pages de patentés s'endorment : ce n'est pas le manque d'envie, c'est le manque d'idées. Bonne nouvelle : vous n'avez pas besoin d'être graphiste ni d'avoir des choses extraordinaires à raconter. Votre quotidien d'entrepreneur du fenua est déjà plein de contenus qui intéressent vos clients. Voici de quoi ne plus jamais sécher." },
+      { type: 'h2', content: "La régularité bat la perfection" },
+      { type: 'p', content: "Avant les idées, un principe : l'algorithme de Facebook favorise les pages actives et régulières. Deux publications par semaine, chaque semaine, valent bien mieux qu'une rafale de cinq posts suivie de deux mois de silence. Fixez-vous un rythme tenable — même modeste — et tenez-le. Un téléphone récent et un peu de lumière naturelle suffisent pour des photos correctes : à Tahiti, le décor fait souvent la moitié du travail." },
+      { type: 'h2', content: "10 idées de publications qui marchent au fenua" },
+      { type: 'h3', content: "Montrez les coulisses" },
+      { type: 'list', items: [
+        "1. Votre quotidien en photo : la préparation du matin, le chargement du camion, l'atelier, le marché. Ce qui est banal pour vous est une découverte pour vos clients.",
+        "2. Un avant / après : une réparation, une coupe, un aménagement, un plat en cours puis dressé. Le format le plus parlant qui soit.",
+        "3. Présentez votre équipe (ou vous-même) : un visage crée dix fois plus de lien qu'un logo. Prénom, rôle, petite anecdote, et c'est tout."
+      ]},
+      { type: 'h3', content: "Mettez vos clients en avant" },
+      { type: 'list', items: [
+        "4. Partagez un avis client : une capture propre d'un commentaire ou d'un message de remerciement (avec l'accord de la personne), accompagnée d'un mot sincère.",
+        "5. Racontez une réalisation : le problème du client, ce que vous avez fait, le résultat. Trois phrases suffisent pour montrer votre savoir-faire.",
+        "6. Célébrez les moments : un anniversaire d'ouverture, un cap de clients servis, une nouveauté. Vos abonnés aiment fêter avec vous."
+      ]},
+      { type: 'h3', content: "Apportez de la valeur" },
+      { type: 'list', items: [
+        "7. Un conseil de pro : l'astuce que vous répétez à tous vos clients. Simple pour vous, précieuse pour eux — et elle installe votre crédibilité.",
+        "8. Répondez à une question fréquente : horaires, délais, tarifs, zones desservies. Chaque question posée en message privé est une idée de publication.",
+        "9. Une offre ou une info pratique : promotion ponctuelle, fermeture exceptionnelle, arrivage. Clair, daté, sans en abuser.",
+        "10. Posez une question à votre communauté : demandez un avis, faites voter entre deux options. Les gens adorent donner leur opinion, et Facebook adore les commentaires."
+      ]},
+      { type: 'h2', content: "Trois réflexes pour multiplier l'engagement" },
+      { type: 'p', content: "Publiez quand vos clients sont connectés : tôt le matin ou en fin de journée, c'est souvent là que le fenua consulte son fil. Terminez vos publications par une question ou une invitation claire — commenter, passer en boutique, envoyer un message. Et surtout, répondez à chaque commentaire : c'est bon pour la relation client, et l'algorithme y voit une page vivante qu'il montrera davantage." },
+      { type: 'h2', content: "Et si vous n'avez vraiment pas le temps ?" },
+      { type: 'p', content: "C'est le cas de beaucoup de patentés : entre les chantiers, les clients et la paperasse, la page Facebook passe en dernier. C'est précisément pour ça que CréaVibes propose une formule community management à 18 000 F/mois, sans engagement : huit publications par mois, des visuels professionnels et une vraie stratégie adaptée à votre activité. Vous restez concentré sur votre métier, votre page travaille pour vous. Et si vous voulez aller plus loin, un site internet bien pensé transforme cette visibilité en demandes concrètes." },
+      { type: 'p', content: "Envie d'un regard extérieur sur votre page ? Réservez un rendez-vous découverte en visio de 30 minutes : c'est gratuit, sans engagement, et vous repartirez avec des idées concrètes pour votre communication — que vous travailliez avec nous ou non." },
+      { type: 'note', content: "Article informatif. Les performances d'une page Facebook dépendent de nombreux facteurs (secteur, régularité, algorithmes) : CréaVibes ne garantit aucun résultat chiffré." },
+    ]
+  },
+  {
     slug: "seo-local-tahiti-apparaitre-sur-google",
     title: "SEO local à Tahiti : comment apparaître sur Google quand vos clients cherchent ici",
     metaTitle: "SEO local à Tahiti : être trouvé sur Google | CréaVibes",
