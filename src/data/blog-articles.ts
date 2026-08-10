@@ -27,6 +27,59 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "site-internet-bilingue-tahiti-clientele-touristique",
+    title: "Site internet bilingue à Tahiti : capter la clientèle touristique",
+    metaTitle: "Site bilingue à Tahiti : capter les touristes | CréaVibes",
+    metaDescription: "281 227 touristes en Polynésie en 2025. Pourquoi et comment proposer votre site en français et en anglais pour capter cette clientèle à Tahiti.",
+    excerpt: "Vos futurs clients réservent depuis Los Angeles ou Paris, des mois avant d'atterrir à Faa'a. Si votre site n'existe qu'en français, vous êtes invisible pour une partie d'entre eux.",
+    date: "2026-08-10",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Voyageur préparant son séjour avec une carte, un appareil photo et un ordinateur portable",
+    serviceLink: "/creation-site-internet-tahiti",
+    serviceLinkLabel: "Découvrir notre service création de site internet",
+    serviceLinks: [
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+      { href: "/blog/google-business-profile-tahiti-visibilite", label: "Google Business Profile à Tahiti" },
+      { href: "/blog/seo-local-tahiti-apparaitre-sur-google", label: "SEO local à Tahiti : apparaître sur Google" },
+    ],
+    sections: [
+      { type: "p", content: "Un couple à San Francisco prépare son voyage de noces. Un plongeur allemand compare trois prestataires à Moorea. Tous font la même chose : ils tapent quelques mots dans Google, ouvrent cinq onglets, et éliminent en trente secondes ceux qui ne leur parlent pas. Si votre activité touche de près ou de loin au tourisme et que votre site n'existe qu'en français, une partie de ces clients ne vous verra jamais." },
+      { type: "h2", content: "Un marché qui se décide à l'autre bout du monde" },
+      { type: "p", content: "En 2025, la Polynésie française a accueilli 281 227 touristes, un record historique selon l'ISPF, dont près de 54 000 croisiéristes. Surtout, la destination se prépare loin et longtemps à l'avance : un séjour au fenua se réserve souvent six à douze mois avant le décollage, depuis un salon à Los Angeles, Tokyo ou Sydney. Votre premier contact avec le client n'a pas lieu à Papeete : il a lieu sur un écran, dans une langue qui n'est pas forcément le français." },
+      { type: "note", content: "Chiffres de fréquentation touristique 2025 publiés par l'Institut de la statistique de la Polynésie française (ISPF).", source: { label: "Source : ISPF — Fréquentation touristique, décembre 2025", url: "https://www.ispf.pf/publication/1517" } },
+      { type: "p", content: "L'Amérique du Nord figure depuis des années parmi les tout premiers marchés émetteurs de la destination, aux côtés de la France métropolitaine. À cela s'ajoutent les visiteurs australiens et asiatiques qui, faute de parler français, naviguent en anglais. L'anglais n'est pas un luxe au fenua : c'est la langue de travail du tourisme." },
+      { type: "h2", content: "Ce que change vraiment une version anglaise" },
+      { type: "h3", content: "Vous devenez trouvable dans une autre langue" },
+      { type: "p", content: "C'est le point que la plupart des patentés sous-estiment. Google indexe des pages, pas des entreprises. Une page rédigée uniquement en français a très peu de chances de remonter sur une recherche du type « boat tour Moorea » ou « guest house Bora Bora ». Créer de vraies pages en anglais — pas un simple bouton de traduction automatique — c'est ouvrir une seconde porte d'entrée sur votre activité, sur des requêtes où vos concurrents locaux sont souvent absents." },
+      { type: "h3", content: "Vous rassurez avant l'arrivée" },
+      { type: "p", content: "Un touriste qui réserve à 15 000 km cherche avant tout à se rassurer : où exactement, combien, comment on paie, faut-il un transfert depuis l'aéroport. Répondre à ces questions dans sa langue supprime l'hésitation qui fait perdre la réservation — souvent ce qui sépare une simple demande de renseignement d'un acompte encaissé." },
+      { type: "h2", content: "Faut-il tout traduire ? Non." },
+      { type: "p", content: "Bonne nouvelle : un site bilingue efficace ne demande pas de doubler tout votre contenu. Concentrez l'effort sur les pages qui déclenchent la décision :" },
+      { type: "list", items: [
+        "La page d'accueil : qui vous êtes, ce que vous proposez, où vous êtes situé.",
+        "Les pages prestations ou hébergements : descriptif, durée, ce qui est inclus, ce qui ne l'est pas.",
+        "Les tarifs : affichés en F CFP, avec un ordre de grandeur en euros ou en dollars si votre clientèle est majoritairement étrangère.",
+        "Les informations pratiques : accès, transferts, horaires, conditions d'annulation et moyens de paiement.",
+        "La page contact et le formulaire de réservation : les champs et les messages d'erreur aussi, pas seulement le titre."
+      ]},
+      { type: "p", content: "Votre blog, vos actualités ou vos mentions légales peuvent rester en français dans un premier temps. Mieux vaut cinq pages anglaises impeccables que trente pages traduites à la va-vite." },
+      { type: "h2", content: "Les erreurs qui coûtent cher" },
+      { type: "list", items: [
+        "Le widget de traduction automatique seul : il donne souvent un anglais approximatif, et les pages générées sont rarement indexées par Google. Vous payez le désagrément sans gagner la visibilité.",
+        "Traduire mot à mot : « pension de famille » n'est pas « family pension ». Les voyageurs anglophones cherchent « guest house » ou « bed and breakfast ». Utilisez leurs mots, pas la traduction littérale des vôtres.",
+        "Oublier le formulaire et les e-mails automatiques : recevoir une confirmation en français après avoir réservé en anglais, ça fait amateur.",
+        "Négliger les formats : dates, fuseau horaire et prix doivent être lisibles sans effort. Précisez « Tahiti time (UTC-10) » quand c'est utile."
+      ]},
+      { type: "h2", content: "Le site ne travaille pas tout seul" },
+      { type: "p", content: "Prolongez l'effort là où les voyageurs vous cherchent aussi : une description et des réponses aux avis en anglais sur votre fiche Google Business Profile, une courte version anglaise en fin de publication sur Facebook et Instagram. Les avis restent le premier réflexe d'un touriste avant de réserver." },
+      { type: "h2", content: "Par où commencer concrètement" },
+      { type: "p", content: "Commencez petit et sérieusement. Listez les cinq questions que vos clients étrangers vous posent le plus souvent, rédigez les réponses en français, puis faites-les traduire correctement — par un vrai bilingue, pas par un outil laissé en pilote automatique. Ces cinq réponses forment déjà le squelette de votre version anglaise." },
+      { type: "p", content: "Chez CréaVibes, nous construisons des sites pensés dès le départ pour deux langues : pages anglaises réellement indexables, balises de langue correctes, formulaires et e-mails cohérents, chargement rapide même depuis l'étranger. Et si votre projet est éligible, l'Aide à la Création Numérique du Pays peut en financer une partie." },
+      { type: "p", content: "Vous vous demandez si votre activité a vraiment besoin d'une version anglaise, et ce que ça représenterait comme travail ? Réservez un rendez-vous découverte en visio de 30 minutes : c'est gratuit, sans engagement, et vous repartirez avec un avis clair sur votre situation." },
+      { type: "note", content: "Article informatif. Les chiffres de fréquentation cités proviennent de l'ISPF et concernent l'année 2025. La visibilité d'un site dépend de nombreux facteurs (secteur, concurrence, algorithmes) : CréaVibes ne garantit aucun résultat chiffré." },
+    ]
+  },
+  {
     slug: "idees-publications-facebook-patente-tahiti",
     title: "Que publier sur votre page Facebook ? 10 idées pour les patentés de Tahiti",
     metaTitle: "Que publier sur Facebook ? 10 idées à Tahiti | CréaVibes",
