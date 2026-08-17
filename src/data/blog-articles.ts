@@ -27,6 +27,56 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "nom-de-domaine-pf-ou-com-tahiti",
+    title: "Nom de domaine .pf ou .com : que choisir pour son site à Tahiti ?",
+    metaTitle: "Domaine .pf ou .com pour son site à Tahiti | CréaVibes",
+    metaDescription: "Le .pf est réservé aux entreprises de Polynésie et géré par la DGEN. Conditions, tarif, avantages réels : comment choisir entre .pf et .com à Tahiti.",
+    excerpt: "Faut-il prendre monentreprise.pf ou monentreprise.com ? Une question qui paraît anodine, mais qui touche à votre image locale, à votre visibilité et à votre budget.",
+    date: "2026-08-17",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Ordinateur portable ouvert sur un bureau lors de la création d'un site internet",
+    serviceLink: "/creation-site-internet-tahiti",
+    serviceLinkLabel: "Découvrir notre service création de site internet",
+    serviceLinks: [
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+      { href: "/blog/seo-local-tahiti-apparaitre-sur-google", label: "SEO local à Tahiti : apparaître sur Google" },
+      { href: "/blog/aide-creation-numerique-acn-polynesie", label: "L'Aide à la Création Numérique (ACN) en Polynésie" },
+    ],
+    sections: [
+      { type: "p", content: "Vous lancez votre site et vous butez sur une question qui paraît anodine : faut-il prendre monentreprise.pf ou monentreprise.com ? Beaucoup de patentés tranchent en trente secondes, un peu au hasard. C'est dommage, parce que ce choix touche à la fois à votre image locale, à votre visibilité et à votre budget — et parce qu'au fenua, les règles ne sont pas les mêmes qu'en métropole." },
+      { type: "h2", content: "Le .pf n'est pas un domaine comme les autres" },
+      { type: "p", content: "Première chose à savoir : le .pf est géré par le Pays. La Direction générale de l'économie numérique (DGEN) en est l'office d'enregistrement, et la commercialisation auprès du public passe par un bureau d'enregistrement, aujourd'hui Mana. On ne prend donc pas un .pf en deux clics chez un registrar international, comme on prendrait un .com un dimanche soir." },
+      { type: "p", content: "Autre différence de taille : le .pf n'est pas ouvert à tout le monde. La charte de nommage réserve ces adresses aux personnes et aux structures établies en Polynésie française, et le nom demandé doit correspondre, en tout ou partie, à votre raison sociale, à votre sigle ou à une marque dont vous justifiez la propriété. Concrètement, il faut fournir un justificatif de moins de six mois : numéro Tahiti, extrait du registre, certificat INPI. L'attribution se fait ensuite au premier arrivé, premier servi." },
+      { type: "note", content: "Les règles d'attribution des noms de domaine en zone .pf sont fixées par la charte de nommage Internet de la Polynésie française (arrêté n° 1402 CM du 18 octobre 2007), publiée par la DGEN.", source: { label: "Source : DGEN — Charte de nommage Internet", url: "https://www.service-public.pf/dgen/charte-de-nommage-internet/" } },
+      { type: "p", content: "Côté budget, l'abonnement annuel se situe autour de 3 000 F HT, soit un peu plus de 3 000 F TTC selon le tarif affiché par le bureau d'enregistrement. Vérifiez le montant en vigueur au moment de votre demande : c'est un abonnement récurrent, pas un achat définitif. Si vous ne le renouvelez pas, l'adresse redevient libre." },
+      { type: "h2", content: "Ce que le .pf vous apporte vraiment" },
+      { type: "h3", content: "Un signal de proximité immédiat" },
+      { type: "p", content: "Quand un client du fenua voit une adresse en .pf, il comprend en une fraction de seconde qu'il a affaire à une entreprise d'ici, pas à une plateforme lointaine ni à un intermédiaire. Pour un artisan de Punaauia, une pension aux Tuamotu ou un prestataire de Papeete, ce réflexe de confiance a de la valeur. C'est le même mécanisme qu'un numéro local sur une carte de visite." },
+      { type: "h3", content: "Des noms encore disponibles" },
+      { type: "p", content: "Sur le .com, les noms courts et évidents sont pris depuis quinze ans. Sur le .pf, l'espace est nettement moins encombré : il reste des adresses simples, mémorisables et surtout prononçables au téléphone. Ne sous-estimez pas ce dernier point — au fenua, beaucoup de premiers contacts commencent encore par un appel." },
+      { type: "h2", content: "Ce que le .pf ne fait pas" },
+      { type: "p", content: "Soyons honnêtes sur un point : prendre un .pf ne vous fera pas mécaniquement remonter dans Google. Une extension géographique aide un moteur à comprendre à quel public vous vous adressez, mais votre visibilité locale se joue surtout ailleurs : fiche Google Business Profile, cohérence de vos coordonnées, contenu réellement local de vos pages, avis clients, vitesse de chargement. Un .pf posé sur un site vide ne remontera pas mieux qu'un .com posé sur un site vide." },
+      { type: "h2", content: "Alors, .pf ou .com ?" },
+      { type: "p", content: "Le .com garde deux atouts sérieux : il est immédiatement compris par une clientèle étrangère, et il s'enregistre partout, sans justificatif, en quelques minutes. Si votre activité touche au tourisme ou vise des clients hors du territoire, ne vous en privez pas." },
+      { type: "p", content: "La bonne nouvelle, c'est que la question est un peu mal posée. Rien ne vous oblige à choisir définitivement : réserver les deux extensions et faire pointer l'une vers l'autre coûte quelques milliers de francs par an, et vous évite le scénario désagréable de voir quelqu'un déposer votre nom sur l'autre extension dans deux ans." },
+      { type: "list", items: [
+        "Activité 100 % locale (artisan, commerce de proximité, services aux particuliers) : le .pf en adresse principale, le .com en réservation.",
+        "Activité tournée vers le tourisme ou l'international : le .com en principal, le .pf en redirection pour la clientèle du fenua.",
+        "Marque que vous comptez développer : déposez les deux dès le départ, avant même la mise en ligne du site.",
+        "Dans tous les cas : une seule adresse doit être « la » vôtre. Les autres redirigent vers elle, sinon vous divisez votre référencement entre deux sites jumeaux."
+      ]},
+      { type: "h2", content: "Trois vérifications avant de vous lancer" },
+      { type: "list", items: [
+        "Le nom est-il libre sur les deux extensions ? Vérifiez-le avant d'imprimer vos cartes de visite et de flocker votre véhicule.",
+        "Est-il prononçable et épelable au téléphone ? Évitez les tirets, les chiffres et les jeux de mots qui demandent une explication à chaque fois.",
+        "Qui sera propriétaire du domaine ? Exigez qu'il soit enregistré à votre nom, pas à celui de votre prestataire. C'est votre actif, au même titre que votre enseigne."
+      ]},
+      { type: "p", content: "Chez CréaVibes, nous traitons cet arbitrage dès le début du projet : choix de l'extension, réservation, configuration technique, puis création du site lui-même. Et selon la nature de votre projet, l'Aide à la Création Numérique du Pays peut en financer une partie." },
+      { type: "p", content: "Vous hésitez entre deux noms, ou vous ne savez pas si votre domaine actuel est bien à votre nom ? Réservez un rendez-vous découverte en visio de 30 minutes : c'est gratuit, sans engagement, et vous repartirez avec une réponse claire." },
+      { type: "note", content: "Article informatif, à jour au 17 août 2026. Les conditions d'attribution et les tarifs des noms de domaine en zone .pf sont susceptibles d'évoluer : vérifiez-les auprès de la DGEN et de votre bureau d'enregistrement. La visibilité d'un site dépend de nombreux facteurs (secteur, concurrence, algorithmes) : CréaVibes ne garantit aucun résultat chiffré." },
+    ]
+  },
+  {
     slug: "site-internet-bilingue-tahiti-clientele-touristique",
     title: "Site internet bilingue à Tahiti : capter la clientèle touristique",
     metaTitle: "Site bilingue à Tahiti : capter les touristes | CréaVibes",
