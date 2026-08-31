@@ -33,7 +33,7 @@ export const blogArticles: BlogArticle[] = [
     metaDescription: "Portée, interactions, messages : les chiffres à regarder sur votre page Facebook quand on est patenté à Tahiti, ceux à ignorer, et une routine simple.",
     excerpt: "Portée, abonnés, mentions J'aime… Difficile de savoir quels chiffres regarder sans y passer ses soirées. Les trois indicateurs qui comptent vraiment, ceux qui flattent l'ego, et une routine de quinze minutes par mois.",
     date: "2026-08-31",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Ordinateur portable affichant des graphiques de statistiques",
     serviceLink: "/community-management-tahiti",
     serviceLinkLabel: "Découvrir notre service community management",
