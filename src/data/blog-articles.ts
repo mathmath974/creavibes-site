@@ -27,6 +27,56 @@ export type Section =
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "groupes-facebook-tahiti-faire-connaitre-entreprise",
+    title: "Les groupes Facebook à Tahiti : faire connaître votre entreprise sans budget pub",
+    metaTitle: "Groupes Facebook à Tahiti : se faire connaître | CréaVibes",
+    metaDescription: "Les groupes Facebook sont incontournables au fenua. Comment y faire connaître votre entreprise sans spammer : règles, bons réflexes, erreurs à éviter.",
+    excerpt: "Vide-grenier, entraide par commune, bons plans : à Tahiti, la vie passe par les groupes Facebook. Bien utilisés, ils font connaître votre entreprise gratuitement. Mal utilisés, ils vous grillent. Mode d'emploi.",
+    date: "2026-09-02",
+    image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Smartphone affichant le logo Facebook tenu dans une main",
+    serviceLink: "/community-management-tahiti",
+    serviceLinkLabel: "Découvrir notre service community management",
+    serviceLinks: [
+      { href: "/community-management-tahiti", label: "Community management à Tahiti" },
+      { href: "/blog/idees-publications-facebook-patente-tahiti", label: "10 idées de publications Facebook pour les patentés" },
+      { href: "/creation-site-internet-tahiti", label: "Création de site internet à Tahiti" },
+    ],
+    sections: [
+      { type: "p", content: "À Tahiti, quand on cherche un plombier, une nounou, un traiteur pour un baptême ou une pièce détachée introuvable, le réflexe n'est pas Google : c'est de poser la question dans un groupe Facebook. Vide-greniers, groupes d'entraide par commune, bons plans du fenua… ces communautés rassemblent des dizaines de milliers de Polynésiens et fonctionnent comme la version numérique du bouche-à-oreille. Pour un patenté, c'est une vitrine gratuite considérable — à condition de savoir s'y comporter. Car la frontière est fine entre l'entreprise appréciée et celle qui finit bloquée par les administrateurs." },
+      { type: "h2", content: "Pourquoi les groupes comptent autant au fenua" },
+      { type: "p", content: "Votre page Facebook parle surtout à ceux qui vous suivent déjà. Un groupe, lui, vous met devant des personnes qui ne vous connaissent pas encore mais qui habitent votre commune, partagent vos centres d'intérêt ou cherchent précisément ce que vous vendez. Et la recommandation y est publique : quand quelqu'un demande « vous connaissez un bon pâtissier vers Paea ? » et que trois personnes citent votre nom, cela vaut toutes les publicités. Ce mécanisme de preuve sociale, très puissant en Polynésie où tout le monde connaît quelqu'un qui connaît quelqu'un, est exactement ce que les groupes amplifient." },
+      { type: "h2", content: "Trouver les bons groupes pour votre activité" },
+      { type: "list", items: [
+        "Les groupes de votre commune ou de votre île : c'est là que vivent vos clients. Une entreprise de Taravao n'a pas grand-chose à faire dans un groupe centré sur Papeete.",
+        "Les groupes de vente et de bons plans : incontournables si vous vendez des produits, à condition de respecter scrupuleusement leurs règles de publication.",
+        "Les groupes thématiques liés à votre métier : mamans du fenua pour une marque de vêtements enfants, passionnés de va'a pour un préparateur physique, jardinage pour un pépiniériste.",
+        "Les groupes d'entraide entre entrepreneurs : moins pour vendre que pour apprendre, échanger et se faire connaître de futurs partenaires.",
+      ]},
+      { type: "h2", content: "La règle d'or : être utile avant d'être visible" },
+      { type: "p", content: "Le membre qui ne publie que des promotions lasse tout le monde et finit signalé. Celui dont on retient le nom est celui qui répond aux questions de son domaine : le mécanicien qui explique pourquoi une clim de voiture givre, la couturière qui conseille un tissu qui tient dans l'humidité, le développeur qui aide à récupérer une page piratée. Répondre trois fois par semaine à des questions de votre métier, sans rien vendre, construit en quelques mois une réputation qu'aucune publicité ne peut acheter. Le jour où quelqu'un demande un professionnel, c'est votre nom qui sort — cité par les autres, pas par vous." },
+      { type: "h3", content: "Ce que vous pouvez publier sans lasser" },
+      { type: "list", items: [
+        "Une réponse détaillée et sincère à une question posée par un membre, même si elle ne débouche sur aucune vente immédiate.",
+        "Vos nouveautés ou promotions, uniquement dans les groupes de vente qui les autorisent, et aux jours prévus par les règles du groupe quand il y en a.",
+        "Un avant/après ou une réalisation dont vous êtes fier, présenté comme un partage plutôt que comme une réclame.",
+        "Une information utile à la communauté : coupure d'eau devant votre boutique, horaires spéciaux pour un jour férié, arrivage attendu.",
+      ]},
+      { type: "h2", content: "Les erreurs qui grillent une entreprise" },
+      { type: "list", items: [
+        "Publier la même annonce dans dix groupes en dix minutes : les membres croisent les mêmes groupes que vous et le copier-coller massif se remarque immédiatement.",
+        "Ignorer les règles épinglées du groupe : chaque groupe a les siennes, souvent strictes sur la publicité, et les administrateurs bannissent sans avertir.",
+        "Répondre en message privé à une question posée en public sans y être invité : c'est perçu comme du démarchage insistant.",
+        "Critiquer un concurrent dans les commentaires : au fenua, cela se sait vite et cela dessert toujours celui qui critique.",
+        "Disparaître six mois puis revenir uniquement pour vendre : la confiance se construit par la régularité, pas par les apparitions intéressées.",
+      ]},
+      { type: "h2", content: "Les groupes attirent, votre présence en ligne conclut" },
+      { type: "p", content: "Un groupe vous fait remarquer, mais c'est votre page Facebook et votre site internet qui transforment la curiosité en client : c'est là qu'on vérifie vos photos, vos avis, vos horaires et qu'on vous écrit. Avant d'investir du temps dans les groupes, assurez-vous que votre page est à jour et donne envie — sinon vous envoyez des curieux vers une porte fermée. Et si votre activité s'y prête, un site simple avec vos tarifs et un moyen de vous contacter fait souvent la différence face à un concurrent qui n'a rien." },
+      { type: "p", content: "Chez CréaVibes, on accompagne les patentés et petites entreprises du fenua sur tout cela : une page Facebook vivante, une stratégie de présence locale cohérente, un site qui rassure. Si vous voulez faire le point sur votre visibilité, réservez un rendez-vous découverte en visio de 30 minutes : c'est gratuit, sans engagement, et vous repartirez avec des pistes concrètes même si on ne travaille pas ensemble." },
+      { type: "note", content: "Article informatif. Chaque groupe Facebook a ses propres règles, fixées par ses administrateurs : vérifiez-les avant de publier. CréaVibes ne garantit aucun résultat commercial ou de référencement chiffré." },
+    ]
+  },
+  {
     slug: "statistiques-page-facebook-tahiti",
     title: "Comprendre les statistiques de votre page Facebook quand on est patenté à Tahiti",
     metaTitle: "Statistiques de votre page Facebook à Tahiti | CréaVibes",
